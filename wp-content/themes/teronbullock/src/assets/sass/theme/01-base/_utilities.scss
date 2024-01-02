@@ -1,0 +1,65 @@
+@use '../../00-helpers/variables' as var;
+
+// background color
+@each $color, $value in var.$colors {
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+// text color
+@each $color, $value in var.$colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+} 
+
+// spacing 
+@each $unit, $value in var.$spacing-unit {
+  .m-#{$unit} {
+    margin: $value !important;
+  }
+  .mt-#{$unit} {
+    margin-top: $value !important;
+  }
+  .mb-#{$unit} {
+    margin-bottom: $value !important;
+  }
+  .ms-#{$unit} {
+    margin-left: $value !important;
+  }
+  .me-#{$unit} {
+    margin-right: $value !important;
+  }
+  .mx-#{$unit} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+  .my-#{$unit} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+  .p-#{$unit} {
+    padding: $value !important;
+  }
+  .pt-#{$unit} {
+    padding-top: $value !important;
+  }
+  .pb-#{$unit} {
+    padding-bottom: $value !important;
+  }
+  .ps-#{$unit} {
+    padding-left: $value !important;
+  }
+  .pe-#{$unit} {
+    padding-right: $value !important;
+  }
+  .px-#{$unit} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+  .py-#{$unit} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+}

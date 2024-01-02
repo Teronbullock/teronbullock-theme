@@ -1,0 +1,42 @@
+// Breakpoints
+$break-xs: 374px;
+$break-sm: 375px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+$break-xxl: 1400px;
+$break-xxxl: 1920px;
+
+
+// colors
+$color-primary: #0f3952;
+$color-secondary: #102D12;
+$color-tertiary: #B6B9B9;
+$color-jasmine: #FFD275;
+$color-red: #d74058;
+$color-gray: #F5F5F5;
+$color-white: #fff;
+$color-black: #141515;
+
+
+$colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "tertiary": $color-tertiary,
+  "jasmine": $color-jasmine,
+  "red": $color-red,
+  "gray": $color-gray,
+  "white": $color-white,
+  "black": $color-black,
+);
+
+// spacing units
+$spacing-unit: (
+  "0": 0,
+  "1": 0.25rem,
+  "2": 0.5rem,
+  "3": 1rem,
+  "4": 1.5rem,
+  "5": 3rem,
+);
+

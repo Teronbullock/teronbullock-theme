@@ -1,0 +1,16 @@
+/* ================================= 
+  base layouts
+==================================== */
+
+.wrapper--project,
+.wrapper--blog {
+  padding-top: 4.375rem;
+}
+
+.admin-bar.logger-in {
+  .wrapper--project,
+  .wrapper--blog {
+    padding-top: 7.375rem;
+  }
+}
+

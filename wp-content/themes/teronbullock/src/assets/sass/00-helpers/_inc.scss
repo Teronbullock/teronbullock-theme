@@ -1,0 +1,38 @@
+/* ================================= 
+  Media Queries
+==================================== */
+@use './variables' as var;
+
+@mixin mq-up($break) {
+
+  @if $break == 'xs' {
+    @media (max-width: var.$break-xs) {
+      @content;
+    }
+  } @else if $break == 'sm' {
+    @media (min-width: var.$break-sm) {
+      @content;
+    }
+  } @else if $break == 'md' {
+    @media (min-width: var.$break-md) {
+      @content;
+    }
+  } @else if $break == 'lg' {
+    @media (min-width: var.$break-lg) {
+      @content;
+    }
+  } @else if $break == 'xl' {
+    @media (min-width: var.$break-xl) {
+      @content;
+    }
+  } @else if $break == 'xxl' {
+    @media (min-width: var.$break-xxl) {
+      @content;
+    }
+  } @else if $break == 'xxxl' {
+    @media (min-width: var.$break-xxxl) {
+      @content;
+    }
+  }
+
+}

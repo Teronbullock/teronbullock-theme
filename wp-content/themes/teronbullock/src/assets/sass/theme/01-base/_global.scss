@@ -1,0 +1,39 @@
+@use '../../00-helpers/inc' as inc;
+@use '../../00-helpers/variables' as var;
+
+:where(body .is-layout-flow) > *,
+:where(.wp-site-blocks) > .entry-content {
+  margin-top: 0 !important;
+}
+
+.is-style-container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include inc.mq-up(md) {
+    max-width: 720px!important;
+  }
+
+  @include inc.mq-up(lg) {
+    max-width: 960px!important;
+  }
+
+  @include inc.mq-up(xl) {
+    max-width: 1140px!important;
+  }
+
+  @include inc.mq-up(xxl) {
+    max-width: 1320px!important;
+  }
+
+  @include inc.mq-up(xxxl) {
+    max-width: 1840px!important;
+  }
+}
+
+.home .wp-block-post-title a {
+  text-decoration: none !important;
+}

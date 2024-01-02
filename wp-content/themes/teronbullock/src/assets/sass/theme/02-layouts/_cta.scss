@@ -1,0 +1,41 @@
+/* ================================= 
+cta
+==================================== */
+@use '../../00-helpers/variables' as var;
+
+.cta .wpcf7 {
+  max-width: 1200px;
+  width: 100%;         
+
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    background-color: inherit;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid var.$color-black;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+    color: var.$color-black;
+
+    &:focus,
+    &::placeholder {
+      background-color: inherit;
+      color: var.$color-black;
+    }
+  }
+
+}
+
+
+.wpcf7-spinner {
+  display: none;
+}
+
+
+#contact .wp-block-group.has-background {
+  box-shadow: 16px 18px 12px -17px rgba(2,8,12,.65);
+}

@@ -1,0 +1,199 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "custom": true,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#0f3952"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#102D12"
+        },
+        {
+          "name": "Tertiary",
+          "slug": "tertiary",
+          "color": "#B6B9B9"
+        },
+        {
+          "name": "Jasmine",
+          "slug": "jasmine",
+          "color": "#FFD275"
+        },
+        {
+          "name": "Red",
+          "slug": "red",
+          "color": "#d74058"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#ffffff"
+        },
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#000000"
+        },
+        {
+          "name": "White Smoke",
+          "slug": "white-smoke",
+          "color": "#F5F5F5"
+        },
+        {
+          "name": "Black Night",
+          "slug": "black",
+          "color": "#141515"
+        }
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fluid": true,
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "1rem"
+        },
+        {
+          "name": "Medium",
+          "slug": "medium",
+          "size": "1.375rem"
+        },
+        {
+          "name": "Large",
+          "slug": "large",
+          "size": "3.125rem"
+        },
+        {
+          "name": "Extra Large",
+          "slug": "x-large",
+          "size": "3.75rem"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "fontFamily": "Poppins, Helvetica, Arial, Lucida, sans-serif",
+          "name": "Poppins",
+          "slug": "heading",
+          "fontFace": [
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "regular",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-regular.woff2"]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-italic.woff2"]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-500.woff2"]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-600.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Lora, sans-serif",
+          "name": "Lora",
+          "slug": "body",
+          "fontFace": [
+            {
+              "fontFamily": "Lora",
+              "fontStyle": "regular",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/lora-v32-latin/lora-v32-latin-regular.woff2"]
+            },
+            {
+              "fontFamily": "Lora",
+              "fontStyle": "italic",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/lora-v32-latin/lora-v32-latin-italic.woff2"]
+            },
+            {
+              "fontFamily": "Lora",
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "fontStretch": "normal",
+              "src": ["file:./assets/fonts/lora-v32-latin/lora-v32-latin-600.woff2"]
+            }
+          ]
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "900px",
+      "wideSize": "1320px"
+    },
+    "blocks": {
+    }
+  },
+  "styles": {
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontWeight": "600",
+          "fontSize": "var(--wp--preset--font-size--x-large)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontWeight": "500",
+          "fontSize": "var(--wp--preset--font-size--large)"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        }
+      }
+    },
+   "typography": {
+    "fontFamily": "var(--wp--preset--font-family--body)"
+   },
+   "blocks": {
+    "core/site-title": {
+      "typography": {
+        "fontFamily": "var(--wp--preset--font-family--heading)"
+      }
+    },
+    "core/navigation": {
+      "typography": {
+        "fontFamily": "var(--wp--preset--font-family--heading)"
+      }
+    }
+   }
+  },
+  "templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
+}

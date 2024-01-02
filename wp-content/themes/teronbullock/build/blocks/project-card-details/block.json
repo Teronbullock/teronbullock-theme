@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/tb-theme-project-card-details",
+  "version": "0.1.0",
+  "title": "TB Theme Project Card Details",
+  "category": "theme",
+  "icon": "text-page",
+  "description": "",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "tb-theme-project-card-details",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
