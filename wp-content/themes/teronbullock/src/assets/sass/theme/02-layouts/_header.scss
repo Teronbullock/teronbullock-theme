@@ -13,24 +13,24 @@
   }
 }
 
-.header {
+.home .header {
   width: 100%;
   background-color: var.$color-white;
   cursor: default;
-  position: sticky;
-  z-index: 1000;
-}
-
-.home .header {
   position: fixed;
   top: 0;
   left: 0;
   transition: .5s;  
+  z-index: 1000;
 }
 
 // header at top of page
 .header.top {
   background-color: transparent;
+}
+
+.header {
+  color: var.$color-black;
 }
 
 .header.top .wp-block-site-title,
@@ -50,7 +50,6 @@
   @include inc.mq-up(lg) {
     display: block;
   }
-
 }
 
 .header .wp-block-site-title a {

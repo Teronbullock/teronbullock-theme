@@ -479,23 +479,23 @@
   }
 }
 
-.header {
+.home .header {
   width: 100%;
   background-color: #fff;
   cursor: default;
-  position: sticky;
-  z-index: 1000;
-}
-
-.home .header {
   position: fixed;
   top: 0;
   left: 0;
   transition: 0.5s;
+  z-index: 1000;
 }
 
 .header.top {
   background-color: transparent;
+}
+
+.header {
+  color: #141515;
 }
 
 .header.top .wp-block-site-title,

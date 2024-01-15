@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/blocks/project-card-details/edit.js":
-/*!*************************************************!*\
-  !*** ./src/blocks/project-card-details/edit.js ***!
-  \*************************************************/
+/***/ "./src/blocks/project-query-block/edit.js":
+/*!************************************************!*\
+  !*** ./src/blocks/project-query-block/edit.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -18,9 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/project-card-details/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/project-query-block/editor.scss");
 
 /**
  * Retrieves the translation of text.
@@ -37,7 +35,6 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 
-
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * Those files can contain any CSS code that gets applied to the editor.
@@ -52,51 +49,28 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
  *
- * @return {WPElement} Element to render.
+ * @return {Element} Element to render.
  */
-function Edit({
-  attributes,
-  setAttributes
-}) {
-  let detailText = '';
-  if (attributes.detailType === 'category') {
-    detailText = 'Category Detail';
-  } else if (attributes.detailType === 'frontendText') {
-    detailText = 'Frontend Text';
-  }
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+function Edit() {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)()
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select Details', 'tb-theme-project-card-details')
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ButtonGroup, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
-    onClick: () => setAttributes({
-      detailType: 'categories'
-    }),
-    isPressed: attributes.detailType === 'category'
-  }, "Post Category"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
-    onClick: () => setAttributes({
-      detailType: 'frontendText'
-    }),
-    isPressed: attributes.detailType === 'frontendText'
-  }, "Frontend Text (ACF)")))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    class: "project-card-details__text mb-4"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(detailText, 'tb-theme-project-card-details')));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('project-query-block – hello from the editor!', 'project-query-block'));
 }
 
 /***/ }),
 
-/***/ "./src/blocks/project-card-details/index.js":
-/*!**************************************************!*\
-  !*** ./src/blocks/project-card-details/index.js ***!
-  \**************************************************/
+/***/ "./src/blocks/project-query-block/index.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/project-query-block/index.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/project-card-details/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/blocks/project-card-details/edit.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/blocks/project-card-details/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/project-query-block/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/blocks/project-query-block/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/blocks/project-query-block/block.json");
 /**
  * Registers a new block provided a unique name and an object defining its behavior.
  *
@@ -133,10 +107,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/project-card-details/editor.scss":
-/*!*****************************************************!*\
-  !*** ./src/blocks/project-card-details/editor.scss ***!
-  \*****************************************************/
+/***/ "./src/blocks/project-query-block/editor.scss":
+/*!****************************************************!*\
+  !*** ./src/blocks/project-query-block/editor.scss ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -145,10 +119,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/project-card-details/style.scss":
-/*!****************************************************!*\
-  !*** ./src/blocks/project-card-details/style.scss ***!
-  \****************************************************/
+/***/ "./src/blocks/project-query-block/style.scss":
+/*!***************************************************!*\
+  !*** ./src/blocks/project-query-block/style.scss ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -187,16 +161,6 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
-/***/ "@wordpress/components":
-/*!************************************!*\
-  !*** external ["wp","components"] ***!
-  \************************************/
-/***/ ((module) => {
-
-module.exports = window["wp"]["components"];
-
-/***/ }),
-
 /***/ "@wordpress/i18n":
 /*!******************************!*\
   !*** external ["wp","i18n"] ***!
@@ -207,13 +171,13 @@ module.exports = window["wp"]["i18n"];
 
 /***/ }),
 
-/***/ "./src/blocks/project-card-details/block.json":
-/*!****************************************************!*\
-  !*** ./src/blocks/project-card-details/block.json ***!
-  \****************************************************/
+/***/ "./src/blocks/project-query-block/block.json":
+/*!***************************************************!*\
+  !*** ./src/blocks/project-query-block/block.json ***!
+  \***************************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/tb-theme-project-card-details","version":"0.1.0","title":"TB Theme Project Card Details","category":"theme","icon":"text-page","description":"","example":{},"supports":{"html":false},"attributes":{"title":{"type":"string","default":"Project Card Details"},"detailType":{"type":"string","default":"category"}},"textdomain":"tb-theme-project-card-details","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"tb/project-query-block","version":"0.1.0","title":"project-query-block","category":"theme","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false},"textdomain":"project-query-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
@@ -327,8 +291,8 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"blocks/project-card-details/index": 0,
-/******/ 			"blocks/project-card-details/style-index": 0
+/******/ 			"blocks/project-query-block/index": 0,
+/******/ 			"blocks/project-query-block/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -378,7 +342,7 @@ module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["blocks/project-card-details/style-index"], () => (__webpack_require__("./src/blocks/project-card-details/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["blocks/project-query-block/style-index"], () => (__webpack_require__("./src/blocks/project-query-block/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

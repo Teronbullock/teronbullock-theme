@@ -11,7 +11,17 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { 
+  useBlockProps,
+  InspectorControls,
+ } from '@wordpress/block-editor';
+
+ import { 
+  Button, 
+  ButtonGroup,
+  PanelBody
+ } from '@wordpress/components';
+
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,11 +39,41 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit({attributes, setAttributes}) {
+
+  let detailText = '';
+  
+  if (attributes.detailType === 'category') {
+    detailText = 'Category Detail';
+  } else if (attributes.detailType === 'frontendText') {
+    detailText = 'Frontend Text' ;
+  }
+ 
 	return (
 		<div { ...useBlockProps() } >
+      <InspectorControls>
+        <PanelBody
+          title={ __('Select Details', 'tb-theme-project-card-details') }
+        >
+          <ButtonGroup>
+            <Button
+              onClick={ () => setAttributes({ detailType: 'categories' }) }
+              isPressed={ attributes.detailType === 'category' }
+            >
+              Post Category
+            </Button>
+            <Button
+              onClick={ () => setAttributes({ detailType: 'frontendText' }) }
+              isPressed={ attributes.detailType === 'frontendText' }
+            >
+              Frontend Text (ACF)
+            </Button>
+          </ButtonGroup>
+        </PanelBody>
+      </InspectorControls>
+    
       <p class="project-card-details__text mb-4">
-        { __('Project Details', 'tb-theme-project-card-details') }
+        { __(detailText, 'tb-theme-project-card-details') }
       </p>
 		</div>
 	);

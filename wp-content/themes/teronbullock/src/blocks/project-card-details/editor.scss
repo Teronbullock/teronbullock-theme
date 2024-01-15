@@ -12,3 +12,15 @@
 .project-card-details__text {
   font-size: 1rem;
 }
+
+
+.components-button-group .components-button {
+  width: 44%;
+  height: 50px;
+  justify-content: center;
+  
+
+  &:first-child {
+    margin-right: .5rem;
+  }
+}

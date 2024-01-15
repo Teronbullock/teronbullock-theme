@@ -1,0 +1,41 @@
+<header class="wp-block-group header" data-js="header">
+
+  <!-- wp:template-part {"slug":"header","theme":"teronbullock","tagName":"div","area":"header"} /-->
+  
+  </header>
+  
+  <!-- wp:group {"className":"is-style-container","layout":{"type":"constrained","contentSize":"900px","wideSize":"1500px"}} -->
+  <div class="wp-block-group is-style-container"><!-- wp:heading {"level":1,"align":"full"} -->
+  <h1 class="wp-block-heading alignfull">Projects</h1>
+  <!-- /wp:heading -->
+  
+  <!-- wp:spacer {"height":"2rem"} -->
+  <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+  
+  <!-- wp:query {"queryId":25,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"full"} -->
+  <div class="wp-block-query alignfull"><!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","columnCount":3}} -->
+  <!-- wp:post-featured-image {"isLink":true,"height":"150px","style":{"border":{"radius":"0px","left":{"width":"0px","style":"none"},"top":{"width":"0px","style":"none"},"right":{"width":"0px","style":"none"},"bottom":{}}}} /-->
+  
+  <!-- wp:post-title {"fontSize":"medium"} /-->
+  
+  <!-- wp:create-block/tb-theme-project-card-details /-->
+  <!-- /wp:post-template -->
+  
+  <!-- wp:query-pagination -->
+  <!-- wp:query-pagination-previous /-->
+  
+  <!-- wp:query-pagination-numbers /-->
+  
+  <!-- wp:query-pagination-next /-->
+  <!-- /wp:query-pagination -->
+  
+  <!-- wp:query-no-results -->
+  <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+  <p></p>
+  <!-- /wp:paragraph -->
+  <!-- /wp:query-no-results --></div>
+  <!-- /wp:query --></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:template-part {"slug":"footer","theme":"teronbullock","area":"footer"} /-->
