@@ -1,0 +1,29 @@
+@use '../00-helpers/variables' as var;
+@use '../00-helpers/inc' as inc;
+
+// .editor-styles-wrapper .wp-block-columns,
+// .wp-container-core-columns-layout-3.wp-container-core-columns-layout-3 {
+
+//   &--tb-mobile-wrap {
+//     flex-wrap: wrap !important;
+//   }
+
+// }
+
+.wp-block-columns--tb-mobile-wrap {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-wrap: wrap !important;
+  gap: 2.125rem;
+}
+
+.wp-block-columns.wp-block-columns--tb-mobile-wrap .wp-block-column {
+  flex-basis: 28% !important;
+
+  &:last-child {
+
+    @media (min-width: 504px) {
+      max-width: 33%;
+    }
+  }
+}

@@ -17,6 +17,7 @@ function tb_theme_enqueue_block_styles() {
   $block_styles = array(
     'core/group'    => 'group-block',
     'core/button'   => 'button-block',
+    'core/columns'  => 'columns-block',
   );
 
 

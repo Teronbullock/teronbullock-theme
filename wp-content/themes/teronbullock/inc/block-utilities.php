@@ -9,8 +9,8 @@
 
 
 */
-//add_filter( 'allowed_block_types_all', 'mp_set_allowed_blocks', 10, 2);
-function mp_set_allowed_blocks( $allowed_block_types, $block_editor_context) {
+//add_filter( 'allowed_block_types_all', 'tb_set_allowed_blocks', 10, 2);
+function tb_set_allowed_blocks( $allowed_block_types, $block_editor_context) {
   return array(
     'core/paragraph',
     'core/heading',
