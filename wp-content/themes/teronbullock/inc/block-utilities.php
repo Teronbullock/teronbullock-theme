@@ -33,9 +33,8 @@ function tb_set_allowed_blocks( $allowed_block_types, $block_editor_context) {
 
 
 // register block styles
-add_action('init', 'de_register_block_styles');
-function de_register_block_styles() {
-
+add_action('init', 'tb_theme_register_block_styles');
+function tb_theme_register_block_styles() {
   $block_styles = array(
     'core/group'      => array(
       array(
@@ -43,7 +42,7 @@ function de_register_block_styles() {
         'label' => 'Container',
       ),
       array(
-        'name'  => 'project-header',
+        'name'  => 'tb-theme-group-project-header',
         'label' => 'Project Header'
       )
     ),
@@ -74,10 +73,8 @@ function de_register_block_styles() {
 
   // loop through each block style
   foreach ($block_styles as $block_name => $block_styles) {
-
     // loop through each block style
     foreach ($block_styles as $block_style) {
-
       // register block style
       register_block_style(
         $block_name,

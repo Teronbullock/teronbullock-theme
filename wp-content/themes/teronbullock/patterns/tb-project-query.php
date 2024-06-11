@@ -1,17 +1,11 @@
-<header class="wp-block-group header" data-js="header">
-
-<!-- wp:template-part {"slug":"header","theme":"teronbullock","tagName":"div","area":"header"} /-->
-
-</header>
-
-<!-- wp:group {"className":"is-style-container tb-project-query","layout":{"type":"constrained","contentSize":"900px","wideSize":"1500px"}} -->
-<div class="wp-block-group is-style-container tb-project-query"><!-- wp:heading {"level":1,"align":"full"} -->
-<h1 class="wp-block-heading alignfull">Projects</h1>
-<!-- /wp:heading -->
-
-<!-- wp:spacer {"height":"1rem"} -->
-<div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<?php
+/**
+ * Title: TB Post Query
+ * Slug: tb-theme/post-query
+ * Categories: posts
+ * Description: This is a custom post query block
+ */
+?>
 
 <!-- wp:group {"align":"wide","className":"tb-theme-group-project-query","layout":{"type":"constrained"},"metadata":{"name":"project-query-group"}} -->
 <div class="wp-block-group alignwide tb-theme-group-project-query"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -57,7 +51,4 @@
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer","theme":"teronbullock","area":"footer"} /-->

@@ -5,26 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm-run-all --parallel wp-scripts build sass",
     "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses",
     "format": "wp-scripts format",
-    "js-watch": "wp-scripts start --config custom-webpack.config.js",
-    "js-build": "wp-scripts build --config custom-webpack.config.js",
     "lint:css": "wp-scripts lint-style",
     "lint:js": "wp-scripts lint-js",
     "lint:md:docs": "wp-scripts lint-md-docs",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "packages-update": "wp-scripts packages-update",
     "plugin-zip": "wp-scripts plugin-zip",
-    "sass-theme-build": "sass ./src/assets/sass/theme:./assets/css/theme --no-source-map",
-    "sass-blocks-build": "sass ./src/assets/sass/blocks:./assets/css/blocks --no-source-map",
-    "sass-build": "npm-run-all --parallel sass-theme-build sass-blocks-build",
-    "sass-theme-watch": "sass --watch ./src/assets/sass/theme:./assets/css/theme",
-    "sass-blocks-watch": "sass --watch ./src/assets/sass/blocks:./assets/css/blocks",
-    "sass-watch": "npm-run-all --parallel sass-theme-watch sass-blocks-watch",
-    "start": "wp-scripts start",
-    "watch": "npm-run-all --parallel start sass-watch js-watch",
+    "build-js": "wp-scripts build --config cust-js-webpack.config.js --env.mode=production",
+    "build-sass-theme": "sass ./src/assets/sass/theme:./assets/css/theme --style compressed --no-source-map",
+    "build-sass-custom-core-blocks": "sass ./src/assets/sass/custom-core-blocks:./assets/css/custom-core-blocks --style compressed --no-source-map",
+    "watch-js": "wp-scripts start --config cust-js-webpack.config.js",
+    "watch-sass-theme": "sass --watch ./src/assets/sass/theme:./assets/css/theme",
+    "watch-sass-custom-core-blocks": "sass --watch ./src/assets/sass/custom-core-blocks:./assets/css/custom-core-blocks",
+    "watch": "npm-run-all --parallel start sass-build",
+    "start-wp": "wp-scripts start",
+    "build-wp": "wp-scripts build",
+    "build": "npm-run-all --parallel build-wp build-js build-sass-theme build-sass-custom-core-blocks",
+    "start": "npm-run-all --parallel start-wp watch-js watch-sass-theme watch-sass-custom-core-blocks",
     "test:e2e": "wp-scripts test-e2e",
     "test:unit": "wp-scripts test-unit-js"
   },
@@ -32,11 +32,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/scripts": "^26.16.0",
-    "sass": "^1.69.5"
+    "@wordpress/scripts": "^26.16.0"
   },
   "dependencies": {
-    "jquery": "^3.7.1",
     "npm-run-all": "^4.1.5"
   }
 }

@@ -13,15 +13,15 @@ import { __ } from '@wordpress/i18n';
  */
 import { 
   useBlockProps,
-  InspectorControls,
- } from '@wordpress/block-editor';
+  BlockControls
+} from '@wordpress/block-editor';
 
- import { 
-  Button, 
-  ButtonGroup,
-  PanelBody
- } from '@wordpress/components';
+import { 
+  Toolbar,
+  ToolbarDropdownMenu
+} from '@wordpress/components';
 
+import { useEntityRecord } from '@wordpress/core-data';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -40,7 +40,7 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 export default function Edit({attributes, setAttributes}) {
-
+  
   let detailText = '';
   
   if (attributes.detailType === 'category') {
@@ -48,32 +48,32 @@ export default function Edit({attributes, setAttributes}) {
   } else if (attributes.detailType === 'frontendText') {
     detailText = 'Frontend Text' ;
   }
- 
+
 	return (
 		<div { ...useBlockProps() } >
-      <InspectorControls>
-        <PanelBody
-          title={ __('Select Details', 'tb-theme-project-card-details') }
-        >
-          <ButtonGroup>
-            <Button
-              onClick={ () => setAttributes({ detailType: 'categories' }) }
-              isPressed={ attributes.detailType === 'category' }
-            >
-              Post Category
-            </Button>
-            <Button
-              onClick={ () => setAttributes({ detailType: 'frontendText' }) }
-              isPressed={ attributes.detailType === 'frontendText' }
-            >
-              Frontend Text (ACF)
-            </Button>
-          </ButtonGroup>
-        </PanelBody>
-      </InspectorControls>
-    
+      <BlockControls>
+        <Toolbar label='Select Details'>
+          <ToolbarDropdownMenu 
+            label='Select Details'
+            controls={[ 
+              {
+                icon: 'text-page',
+                title: 'Post Category',
+                onClick: () => setAttributes({ detailType: 'category' }),
+                isActive: attributes.detailType === 'category'
+              },
+              {
+                icon: 'text-page',
+                title: 'Frontend Text (ACF)',
+                onClick: () => setAttributes({ detailType: 'frontendText' }),
+                isActive: attributes.detailType === 'frontendText'
+              }
+             ]}
+          />
+        </Toolbar>
+      </BlockControls>    
       <p class="project-card-details__text mb-4">
-        { __(detailText, 'tb-theme-project-card-details') }
+        { __(detailText, 'tb-theme') }
       </p>
 		</div>
 	);

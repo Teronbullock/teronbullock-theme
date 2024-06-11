@@ -1,0 +1,18 @@
+@use '../00-helpers/variables' as var;
+@use '../00-helpers/inc' as inc;
+
+.tb-theme-group-project-query {
+
+  .wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background):hover,
+  .wp-block-button.is-style-outline.active>.wp-block-button__link:not(.has-background)
+   {
+    background-color: var.$color-red;
+    color: var.$color-white;
+  }
+
+
+} 
+
+.is-style-tb-theme-group-project-header {
+  margin: 0;
+}

@@ -6,8 +6,8 @@
  * Description: Theme custom media page block
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"},"metadata":{"name":"Media Page Block"}} -->
-<div class="wp-block-group"><!-- wp:image {"align":"center","id":661,"sizeSlug":"full","linkDestination":"custom"} -->
+<!-- wp:group {"className":"tb-media-page-block","layout":{"type":"constrained"},"metadata":{"name":"Media Page Group"}} -->
+<div class="wp-block-group tb-media-page-block"><!-- wp:image {"align":"center","id":661,"sizeSlug":"full","linkDestination":"custom"} -->
 <figure class="wp-block-image aligncenter size-full"><a href="https://masterwp.com/presstheissue/virtual-meetups-are-they-here-to-stay/" target="_blank" rel="noreferrer noopener"><img src="http://teronbullock.local/wp-content/uploads/2023/09/Screenshot-2023-09-11-at-2.36.11-PM.png" alt="" class="wp-image-661"/></a></figure>
 <!-- /wp:image -->
 

@@ -1,5 +1,5 @@
 (function($) {
-  $(document).ready(function($){
+  $(function() {
 
     // Get the navbar
     const header = $('[data-js="header"]');

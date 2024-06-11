@@ -15,6 +15,7 @@
 /wp-content/wp-cache-config.php
 /wp-content/cache/*
 /wp-content/cache/supercache/*
+/wp-content/ai1wm-backups/
 /wp-includes/
 /index.php
 /license.txt

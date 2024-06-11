@@ -1,12 +1,18 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/tb-theme-project-card-details",
+	"name": "tb-theme/project-card-details",
 	"version": "0.1.0",
-	"title": "TB Theme Project Card Details",
+	"title": "TB Project Card Details",
 	"category": "theme",
 	"icon": "text-page",
 	"description": "",
+  "keywords": [
+    "TB Theme",
+    "project",
+    "card",
+    "details"
+  ],
 	"example": {},
 	"supports": {
 		"html": false
@@ -21,7 +27,7 @@
       "default": "category"
     }
   },
-	"textdomain": "tb-theme-project-card-details",
+	"textdomain": "tb-theme",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

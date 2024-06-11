@@ -1,5 +1,15 @@
 <?php
 
+// setup theme
+add_action('after_setup_theme', 'tb_theme_setup');
+function tb_theme_setup() {
+
+  define( 'TB_THEME_NAME', 'teron-bullock' );
+  define( 'TB_THEME_VERSION', '0.0.2' );
+  define( 'TB_TEXT_DOMAIN', 'tb-theme' );
+}
+
+
 // enqueue css into the editor.
 add_action('enqueue_block_assets', 'tb_theme_block_editor_styles');
 function tb_theme_block_editor_styles() {
@@ -10,24 +20,31 @@ function tb_theme_block_editor_styles() {
 }
 
 
-// Register block stylesheets
-add_action( 'init', 'tb_theme_enqueue_block_styles' );
-function tb_theme_enqueue_block_styles() {
-
-  $block_styles = array(
-    'core/group'    => 'group-block',
-    'core/button'   => 'button-block',
-    'core/columns'  => 'columns-block',
+// Register custom core block stylesheets
+add_action('enqueue_block_assets', 'tb_theme_enqueue_custom_core_block_assets');
+function tb_theme_enqueue_custom_core_block_assets() {
+  $core_blocks = array(
+    'core/group',
+    'core/columns',
+    'core/button'
   );
 
 
-  foreach($block_styles as $block => $style) {
-    wp_enqueue_block_style( $block, array(
-      'handle' => 'tb-theme-' . $style,
-      'src'    => get_theme_file_uri( "assets/css/blocks/" . $style . ".css" ),
-      'path'   => get_theme_file_path( "assets/css/blocks/" . $style . ".css" )
-    ) );
+  // check if any core blocks are being used
+  foreach ($core_blocks as $core_block) {
+    $custom_file_name = str_replace('core/', '', $core_block);
 
+    if (has_block($core_block) || is_admin()) {
+      
+      // enqueue custom core block styles on the front-end
+      wp_enqueue_style(
+        "tb-theme-{$custom_file_name}-styles",
+        get_stylesheet_directory_uri() . "/assets/css/custom-core-blocks/tb-custom-{$custom_file_name}.css",
+        array(),
+        TB_THEME_VERSION,
+        'all'
+      );
+    } 
   }
 }
 
@@ -39,7 +56,7 @@ function tb_theme_scripts() {
   wp_enqueue_script(
     'theme-main-script',
     get_template_directory_uri() . '/assets/js/theme-main-scripts.js',
-    array('jquery','wp-blocks', 'wp-element', 'wp-editor') 
+    array('jquery', 'wp-blocks', 'wp-element', 'wp-editor') 
   );
 }
 

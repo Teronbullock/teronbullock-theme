@@ -25,7 +25,27 @@ eval("\nwp.domReady( function() {\n\n  \n// create a block object\n  const tbBlo
   \****************************************/
 /***/ (() => {
 
-eval("(function($) {\n  $(document).ready(function($){\n\n    // Get the navbar\n    const header = $('[data-js=\"header\"]');\n    const body = $('body');\n\n    // Get the offset position of the navbar\n    if ( $(body).hasClass('home') ) {\n\n      // scroll listener\n      $(window).on('scroll', function(e) {\n\n        // if scroll is greater than 70px\n        if( window.scrollY >= 70 && window.innerWidth > 769 ) {\n\n          // remove class from header\n          $(header).removeClass('top');\n\n        } else {\n          $(header).addClass('top');\n        }\n      });\n    \n    } else {\n      header.remove('top');\n    }\n    \n\n  });\n})(jQuery);\n\n//# sourceURL=webpack://teronbullock/./src/assets/js/header-script.js?");
+eval("(function($) {\n  $(function() {\n\n    // Get the navbar\n    const header = $('[data-js=\"header\"]');\n    const body = $('body');\n\n    // Get the offset position of the navbar\n    if ( $(body).hasClass('home') ) {\n\n      // scroll listener\n      $(window).on('scroll', function(e) {\n\n        // if scroll is greater than 70px\n        if( window.scrollY >= 70 && window.innerWidth > 769 ) {\n\n          // remove class from header\n          $(header).removeClass('top');\n\n        } else {\n          $(header).addClass('top');\n        }\n      });\n    \n    } else {\n      header.remove('top');\n    }\n    \n\n  });\n})(jQuery);\n\n//# sourceURL=webpack://teronbullock/./src/assets/js/header-script.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/main.js":
+/*!*******************************!*\
+  !*** ./src/assets/js/main.js ***!
+  \*******************************/
+/***/ (() => {
+
+eval("document.addEventListener('DOMContentLoaded', function() {\n\n  const projectNavBtnAll = document.querySelector('#project-nav--all');\n  const projectNavBtnWP = document.querySelector('#project-nav--wp');\n  const projectNavBtnJS = document.querySelector('#project-nav--js');\n  const body = document.querySelector('body'); \n  const bodyClasses = body.classList;\n\n\n  if ( bodyClasses.contains( 'term-javascript' ) ) {\n    projectNavBtnJS.classList.add( 'active' );\n  } \n\n  if (bodyClasses.contains( 'tax-project-categories' ) && bodyClasses.contains( 'term-wordpress' ) ) {\n    projectNavBtnWP.classList.add( 'active' );\n  } \n\n  if ( bodyClasses.contains( 'post-type-archive-projects' ) ) {\n    projectNavBtnAll.classList.add( 'active' ); \n  }\n\n});\n\n\n//# sourceURL=webpack://teronbullock/./src/assets/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/project-loop-script.js":
+/*!**********************************************!*\
+  !*** ./src/assets/js/project-loop-script.js ***!
+  \**********************************************/
+/***/ (() => {
+
+eval("(function($) {\n  $(function() {\n    let postCard = $('.tb-post-card'); \n\n\n    class ProjectLoop {\n      constructor(el) {\n        this.el = el;\n        this.init();\n\n        console.log('ProjectLoop class initialized', el);\n      }\n\n      init() {\n      }\n    }\n\n\n\n    $(postCard).each(function(){\n      new ProjectLoop(this);\n    });\n\n  }); \n})(jQuery); \n\n//# sourceURL=webpack://teronbullock/./src/assets/js/project-loop-script.js?");
 
 /***/ })
 
@@ -35,9 +55,11 @@ eval("(function($) {\n  $(document).ready(function($){\n\n    // Get the navbar\
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	__webpack_modules__["./src/assets/js/main.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/block-variations.js"]();
-/******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/assets/js/header-script.js"]();
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/assets/js/project-loop-script.js"]();
 /******/ 	
 /******/ })()
 ;

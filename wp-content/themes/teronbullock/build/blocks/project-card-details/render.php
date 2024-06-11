@@ -6,14 +6,12 @@
  // get post id
   $post_id = get_the_ID();
 
-  // 
   $detail_text = '';
 
   // get deatil type
   $detail_type = $attributes['detailType'];
 
   if ( $detail_type === 'category' ) {
-   
     // get terms
     $terms = wp_get_post_terms($post_id, 'project-categories');
   
