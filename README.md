@@ -1,3 +1,3 @@
-# Teronbullock.com
+# Theme: Teronbullock
 
-**Repo root:** wp-content
+This theme is used on teronbullock.com

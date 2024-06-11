@@ -1,53 +1,5 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# Forked from: https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# Wordpress theme - .gitignore
 
-# Core
-/index.php
-/languages
-/plugins/index.php
-/themes/index.php
-/uploads/
-/blogs.dir/
-/upgrade/*
-/backup-db/*
-/advanced-cache.php
-/wp-cache-config.php
-/cache/*
-/cache/supercache/*
-/ai1wm-backups/
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
-/local-phpinfo.php
-
-# Configuration
-/wp-config.php
-
-# Themes and Plugins
-/themes/*
-/plugins/*
-/mu-plugins/*
-
-# don't ignore these files
-!/themes/teronbullock
-
-# Log files
-*.log
-
-# htaccess
-.htaccess
-
-# WP Engine
-.wpe-devkit/
-.wpe-pull-ignore
-.wpe-push-ignore
-.wpengine-conf/
-_wpeprivate/
-
-# Other
 .DS_Store
 node_modules
 local-xdebuginfo.php
