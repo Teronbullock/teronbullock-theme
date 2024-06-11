@@ -53,3 +53,8 @@ local-xdebuginfo.php
 .ftpquota
 error_log
 /wp-content/db.php
+
+#server
+.htaccess.bk
+.private/
+default.php
