@@ -1,3 +1,1 @@
-# Teronbullock.com
-
-**Repo root:** wp-content
+# Theme: Teronbullock
