@@ -2,20 +2,19 @@
 # Forked from: https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
 # Core
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-content/uploads/
-/wp-content/blogs.dir/
-/wp-content/upgrade/*
-/wp-content/backup-db/*
-/wp-content/advanced-cache.php
-/wp-content/wp-cache-config.php
-/wp-content/cache/*
-/wp-content/cache/supercache/*
-/wp-content/ai1wm-backups/
+/index.php
+/languages
+/plugins/index.php
+/themes/index.php
+/uploads/
+/blogs.dir/
+/upgrade/*
+/backup-db/*
+/advanced-cache.php
+/wp-cache-config.php
+/cache/*
+/cache/supercache/*
+/ai1wm-backups/
 /wp-includes/
 /index.php
 /license.txt
@@ -28,10 +27,12 @@
 /wp-config.php
 
 # Themes and Plugins
-/wp-content/themes/*
-/wp-content/plugins/*
-/wp-content/mu-plugins/*
-!wp-content/themes/teronbullock
+/themes/*
+/plugins/*
+/mu-plugins/*
+
+# don't ignore these files
+!/themes/teronbullock
 
 # Log files
 *.log
@@ -52,7 +53,7 @@ node_modules
 local-xdebuginfo.php
 .ftpquota
 error_log
-/wp-content/db.php
+/db.php
 
 #server
 .htaccess.bk
