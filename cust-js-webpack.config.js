@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = (env) => {
-  const mode = env && env.node ? env.mode : 'development';
+  const mode = env && env.mode ? env.mode : 'development';
 
   return {
     entry: [ 

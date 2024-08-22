@@ -47,7 +47,46 @@ wp.domReady( function() {
           }
         }
       }
-    }
+    },
+    {
+      name: 'tb-theme/query-card',
+      value: {
+        name: 'tb-theme/query-card-img',
+        title: 'TB: Query Card with Image',
+        description: 'TB Query card with image.',
+        innerBlocks: [
+          ['core/post-featured-image',
+            {
+              "aspectRatio": "16/9",
+              "scale": "fill",
+              "style":{
+                "spacing": {
+                  "margin": { "bottom": "1rem" }
+                },
+                "border": { "radius": "8px" }
+              }
+            }
+          ],
+          ['core/post-title',
+            {
+              "style": { 
+                "spacing": {
+                  "margin": { "bottom": "1rem" } 
+                },
+                "elements": {
+                  "link": { 
+                    "color": { "text": "var:preset|color|black" }
+                  }
+                }
+              },
+              "textColor": "black",
+              "fontSize": "medium"
+            }
+          ],
+          ['tb-theme/project-card-details']
+        ]
+      }
+    },
   ];
 
 

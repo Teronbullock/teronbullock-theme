@@ -2,8 +2,8 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "tb-theme/project-card-details",
-  "version": "0.1.0",
-  "title": "TB Project Card Details",
+  "version": "0.0.2",
+  "title": "TB: Project Card Details",
   "category": "theme",
   "icon": "text-page",
   "description": "",
@@ -14,6 +14,11 @@
     "details"
   ],
   "example": {},
+  "usesContext": [
+    "postId",
+    "postType",
+    "queryId"
+  ],
   "supports": {
     "html": false
   },

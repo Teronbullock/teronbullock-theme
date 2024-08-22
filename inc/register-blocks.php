@@ -5,7 +5,8 @@ add_action( 'init', 'tb_theme_blocks_block_init' );
 function tb_theme_blocks_block_init() {
   $blocks = array(
     'project-card-details',
-    'query-card'
+    'query-card',
+    'category-display-block',
   );
 
   foreach( $blocks as $block ) {

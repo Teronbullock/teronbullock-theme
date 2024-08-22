@@ -2,8 +2,8 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "tb-theme/query-card",
-	"version": "0.1.0",
-	"title": "TB Query Card",
+	"version": "0.0.2",
+	"title": "TB: Query Card",
 	"category": "theme",
 	"icon": "index-card",
 	"description": "Displaying a card that has a link to a post or page.",
@@ -13,6 +13,10 @@
     "align": {
       "type": "string",
       "default": "full"
+    },
+    "postLinkType": {
+      "type": "string",
+      "default": "post"
     }
   },
 	"supports": {

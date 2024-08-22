@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
+  "version": 3,
   "settings": {
     "appearanceTools": true,
     "color": {
@@ -54,9 +54,14 @@
         }
       ]
     },
+    "layout": {
+      "contentSize": "900px",
+      "wideSize": "1320px"
+    },
     "typography": {
       "customFontSize": false,
       "fluid": true,
+      "defaultFontSizes": false,
       "fontSizes": [
         {
           "name": "Small",
@@ -141,11 +146,59 @@
         }
       ]
     },
-    "layout": {
-      "contentSize": "900px",
-      "wideSize": "1320px"
-    },
     "blocks": {
+      "core/heading": {
+        "typography": {
+          "fontSizes": [
+            {
+              "name": "Small",
+              "slug": "small",
+              "size": "2rem"
+            },
+            {
+              "name": "Mediums",
+              "slug": "medium",
+              "size": "2.75rem"
+            },
+            {
+              "name": "Large",
+              "slug": "large",
+              "size": "3.125rem"
+            },
+            {
+              "name": "Extra Large",
+              "slug": "x-large",
+              "size": "3.75rem"
+            }
+          ]
+        }
+      },
+      "core/post-title": {
+        "typography": {
+          "fontSizes": [
+            {
+              "name": "Small",
+              "slug": "small",
+              "size": "2rem"
+            },
+            {
+              "name": "Medium",
+              "slug": "medium",
+              "size": "2.5rem"
+            },
+            {
+              "name": "Large",
+              "slug": "large",
+              "size": "2.75rem"
+            },
+            {
+              "name": "Extra Large",
+              "slug": "x-large",
+              "size": "3rem"
+            }
+          ]
+        }
+      }
     }
   },
   "styles": {
@@ -181,6 +234,23 @@
       "typography": {
         "fontFamily": "var(--wp--preset--font-family--heading)"
       }
+    },
+    "tb-theme/category-display-block": {
+     "color": {
+       "background": "var(--wp--preset--color--primary)",
+       "text": "var(--wp--preset--color--white)"
+     },
+     "spacing": {
+      "padding": {
+        "top": "0.5rem",
+        "right": "0.5rem",
+        "bottom": "0.5rem",
+        "left": "0.5rem"
+      },
+      "margin": {
+        "right": "0.5rem"
+      }
+     }
     }
    }
   },

@@ -25,7 +25,6 @@
     } else {
       header.remove('top');
     }
-    
 
   });
 })(jQuery);

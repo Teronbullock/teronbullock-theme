@@ -44,7 +44,11 @@ function tb_theme_register_block_styles() {
       array(
         'name'  => 'tb-theme-group-project-header',
         'label' => 'Project Header'
-      )
+      ),
+      array(
+        'name'  => 'tb-theme-flex',
+        'label' => 'Flex'
+      ),
     ),
     'core/columns'    => array(
       array(

@@ -3,6 +3,7 @@
 ==================================== */
 @use './variables' as var;
 
+// max width
 @mixin mq-up($break) {
 
   @if $break == 'xs' {
@@ -31,6 +32,41 @@
     }
   } @else if $break == 'xxxl' {
     @media (min-width: var.$break-xxxl) {
+      @content;
+    }
+  }
+
+}
+
+// min width
+@mixin mq-down($break) {
+
+  @if $break == 'xs' {
+    @media (max-width: var.$break-xs) {
+      @content;
+    }
+  } @else if $break == 'sm' {
+    @media (max-width: var.$break-sm) {
+      @content;
+    }
+  } @else if $break == 'md' {
+    @media (max-width: var.$break-md) {
+      @content;
+    }
+  } @else if $break == 'lg' {
+    @media (max-width: var.$break-lg) {
+      @content;
+    }
+  } @else if $break == 'xl' {
+    @media (max-width: var.$break-xl) {
+      @content;
+    }
+  } @else if $break == 'xxl' {
+    @media (max-width: var.$break-xxl) {
+      @content;
+    }
+  } @else if $break == 'xxxl' {
+    @media (max-width: var.$break-xxxl) {
       @content;
     }
   }

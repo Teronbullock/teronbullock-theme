@@ -21,7 +21,11 @@ import {
   ToolbarDropdownMenu
 } from '@wordpress/components';
 
-import { useEntityRecord } from '@wordpress/core-data';
+import { useRef } from '@wordpress/element';
+
+import { useEntityRecords, useEntityRecord } from '@wordpress/core-data';
+import { useSelect, select } from '@wordpress/data';
+
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -39,12 +43,57 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit({attributes, setAttributes}) {
-  
+export default function Edit({attributes, setAttributes, context}) {
+  const { postId, postType} = context;
+  const currentPostTypeCat = `${postType}_categories`;
+  const termCatIds = useRef({});
+  const termIds = useRef();
+  const termNames = useRef('');
   let detailText = '';
+
   
   if (attributes.detailType === 'category') {
-    detailText = 'Category Detail';
+    
+
+    const taxonomies = useSelect( ( select ) => {
+      if ( postId ) {
+          let tax = select( 'core' ).getTaxonomies( { type: postType } );
+
+          return tax;
+      }
+      return [];
+  }, [ postId ] );
+
+  if ( taxonomies ) {
+    console.log('taxonomies', taxonomies, taxonomies[0].slug);
+  }
+    //----------
+    // const { records: taxonomyRecords, hasResolved: taxonomyHasResolved } = useEntityRecords( 'taxonomy', currentPostTypeCat );
+
+    // if (taxonomyRecords && taxonomyHasResolved) {
+    //   // console.log('taxonomyRecords', taxonomyRecords);
+    //   taxonomyRecords.forEach( term => {
+    //     termCatIds.current[term.id] = term.name;
+    //   });
+    // }
+
+    const { record: termNameRecord, hasResolved: termNameHasResolved } = useEntityRecord( 'postType', postType, postId );
+
+    if (termNameRecord && termNameHasResolved) {
+      // console.log(`postType ${postId} - ${currentPostTypeCat}: `, termNameRecord);
+
+      // termIds.current = termNameRecord[currentPostTypeCat];
+
+      // termIds.current.forEach( (termId, index) => {
+      //   if ( index <= 0 ) {
+      //     termNames.current = termCatIds.current[termId];
+      //   } else {
+      //     termNames.current += ', ' + termCatIds.current[termId];
+      //   }
+      // });
+    }
+
+    detailText = termNames.current;
   } else if (attributes.detailType === 'frontendText') {
     detailText = 'Frontend Text' ;
   }
@@ -68,7 +117,7 @@ export default function Edit({attributes, setAttributes}) {
                 onClick: () => setAttributes({ detailType: 'frontendText' }),
                 isActive: attributes.detailType === 'frontendText'
               }
-             ]}
+            ]}
           />
         </Toolbar>
       </BlockControls>    

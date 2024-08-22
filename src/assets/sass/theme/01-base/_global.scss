@@ -29,11 +29,20 @@
     max-width: 1320px!important;
   }
 
-  @include inc.mq-up(xxxl) {
-    max-width: 1840px!important;
-  }
+  // @include inc.mq-up(xxxl) {
+  //   max-width: 1840px!important;
+  // }
 }
 
 .home .wp-block-post-title a {
   text-decoration: none !important;
+}
+
+.is-style-tb-theme-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tb-theme-post-cat a {
+  text-decoration: none;
 }

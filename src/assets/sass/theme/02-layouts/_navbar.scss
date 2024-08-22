@@ -5,28 +5,8 @@
 @use '../../00-helpers/variables' as var;
 @use '../../00-helpers/inc' as inc;
 
-// when header is at top of page
-.header.top {
-
-  .wp-block-navigation-item__content {
-    border-bottom: 2px transparent solid;
-
-    &:hover {
-      color: var.$color-white;
-      border-color: var.$color-white;
-      transition: border-color 0.5s;
-    }
-
-    @include inc.mq-up(md) {
-      padding-bottom: 0;
-      margin-bottom: 0;
-      border-bottom: 0;
-    }
-  }
-} 
 
 .wp-block-navigation-item {
-
   @include inc.mq-up(lg) {
     margin: 0 5px; 
   }
@@ -35,42 +15,46 @@
     margin: 0 20px; 
   }
 }
+
+// wp-block-navigation-item__content
+.home .header.top .wp-block-navigation-item__content {
+  border-bottom: 2px transparent solid;
   
+  &:hover {
+    color: var.$color-white;
+    border-color: var.$color-white;
+    transition: border-color 0.5s;
+  }
+
+  @include inc.mq-up(md) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
 .wp-block-navigation-item__content {
   font-weight: 500;
   border: 0;
   margin-right: .125rem;
   color: var.$color-black;  
   text-transform: uppercase;
+  text-decoration: none;
   border-bottom: 2px transparent solid;
   padding-bottom: 0.5rem;
   transition: border-color 0.5s;
 
-  
+  &:hover {
+    color: var.$color-red !important;
+    border-color: var.$color-red;
+  }
 
   @include inc.mq-up(md) {
     padding-bottom: 0;
   }
 }
 
-.header:not(.top) .wp-block-navigation-item__content {
-  &:hover {
-    color: var.$color-red!important;
-    border-color: var.$color-red;
-  }
-}
-
-body:not(.home) .wp-block-navigation-item__content {
-  color: var.$color-black;
-  border-bottom: 2px transparent solid;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-    color: var.$color-red;
-  }
-}
-
+// .wp-block-navigation-item__responsive-container
 .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
   display: none;
 
@@ -125,8 +109,7 @@ body:not(.home) .wp-block-navigation-item__content {
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content, .wp-block-navigation__container {
 
-  @media (max-width: 767px) {
+  @include inc.mq-down(lg) {
     align-items: center!important;
-    
   }
 }
