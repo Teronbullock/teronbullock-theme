@@ -83,7 +83,7 @@ wp.domReady( function() {
               "fontSize": "medium"
             }
           ],
-          ['tb-theme/project-card-details']
+          ['tb-theme/category-display-block']
         ]
       }
     },

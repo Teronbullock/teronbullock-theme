@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "tb-theme/project-card-details",
+	"name": "tb-theme/category-display-block",
 	"version": "0.0.2",
 	"title": "TB: Project Card Details",
 	"category": "theme",

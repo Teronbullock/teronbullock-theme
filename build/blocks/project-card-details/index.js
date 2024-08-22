@@ -146,7 +146,7 @@ function Edit({
         })
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-      class: "project-card-details__text mb-4",
+      class: "category-display-block__text mb-4",
       children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)(detailText, 'tb-theme')
     })]
   });
@@ -312,7 +312,7 @@ module.exports = window["wp"]["i18n"];
   \****************************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"tb-theme/project-card-details","version":"0.0.2","title":"TB: Project Card Details","category":"theme","icon":"text-page","description":"","keywords":["TB Theme","project","card","details"],"example":{},"usesContext":["postId","postType","queryId"],"supports":{"html":false},"attributes":{"title":{"type":"string","default":"Project Card Details"},"detailType":{"type":"string","default":"category"}},"textdomain":"tb-theme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"tb-theme/category-display-block","version":"0.0.2","title":"TB: Project Card Details","category":"theme","icon":"text-page","description":"","keywords":["TB Theme","project","card","details"],"example":{},"usesContext":["postId","postType","queryId"],"supports":{"html":false},"attributes":{"title":{"type":"string","default":"Project Card Details"},"detailType":{"type":"string","default":"category"}},"textdomain":"tb-theme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

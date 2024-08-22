@@ -121,7 +121,7 @@ export default function Edit({attributes, setAttributes, context}) {
           />
         </Toolbar>
       </BlockControls>    
-      <p class="project-card-details__text mb-4">
+      <p class="category-display-block__text mb-4">
         { __(detailText, 'tb-theme') }
       </p>
 		</div>

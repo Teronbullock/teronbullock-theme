@@ -4,7 +4,6 @@
  */
 $post_id = get_the_ID();
 $post_taxonomies = get_post_taxonomies($post_id);
-$post_taxonomies = $post_taxonomies[0];
 $category_type = $attributes['categoryType'];
 $display_type = $attributes['displayType'];
 $post_type = get_post_type($post_id);
@@ -12,15 +11,22 @@ $output_text = '';
 
 // check for category type
 if ($category_type === 'taxonomy') {
-  $post_terms = get_the_terms($post_id, $post_taxonomies);
 
-  if ($post_terms) {
-    forEach($post_terms as $key => $post_term) {
-      if ($key > 0) {
-        $output_text .= ', ';
+  if(!$post_taxonomies) {
+    error_log($post_id . ' Category Display Block: No taxonomies found');
+  } else {
+    $post_taxonomies = $post_taxonomies[0];
+    $post_terms = get_the_terms($post_id, $post_taxonomies);
+  
+    if (!$post_terms) {
+      error_log($post_id . ' Category Display Block: No terms found');
+    } else {
+      forEach($post_terms as $key => $post_term) {
+        if ($key > 0) {
+          $output_text .= ', ';
+        }
+        $output_text .= $post_term->name;
       }
-
-      $output_text .= $post_term->name;
     }
   }
 } else if ($category_type === 'text') {

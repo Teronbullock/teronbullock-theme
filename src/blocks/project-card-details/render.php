@@ -39,7 +39,7 @@
 ?>
 <div <?php echo get_block_wrapper_attributes(); ?> >
   <?php if ( isset( $detail_text ) ) : ?>
-  <p class="project-card-details__text mb-4">
+  <p class="category-display-block__text mb-4">
     <?php echo esc_html($detail_text); ?>
   </p>
   <?php endif; ?>

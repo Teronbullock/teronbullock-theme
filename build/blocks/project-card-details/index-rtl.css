@@ -6,12 +6,12 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-create-block-mp-project-card-details {
+.wp-block-create-block-mp-category-display-block {
   padding: 0.5rem;
   border: 1px dotted #f00;
 }
 
-.project-card-details__text {
+.category-display-block__text {
   font-size: 1rem;
 }
 
