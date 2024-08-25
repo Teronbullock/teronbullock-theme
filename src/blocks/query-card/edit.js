@@ -99,30 +99,17 @@ export default function Edit({attributes, setAttributes}) {
             "layout": { "type": "default" } 
           },
           [
-            ['core/post-terms', 
+            ['tb-theme/category-display-block', 
               {
-                "term": "appearances-categories",
-                "separator": "",
-                "className":"tb-theme-post-cat",
-                "style":{ 
-                  "spacing": {
-                    "margin": { "left":"0","right":"1.5rem" },
-                    "padding": { 
-                      "top": "0.5rem",
-                      "bottom": "0.5rem",
-                      "left": "0.5rem",
-                      "right": "0.5rem"
+                "style": {
+                  "elements": {
+                    "link": {
+                      "color": { "text": "var:preset|color|secondary" }
                     }
-                  },
-                  "typography": { "textTransform": "uppercase" },
-                  "elements":{ 
-                    "link": { "color": { "text": "var:preset|color|white" } } 
                   }
                 },
-                "backgroundColor": "secondary",
-                "textColor": "white",
-                "fontSize": "small",
-                "fontFamily": "heading"
+                "backgroundColor": "white",
+                "textColor": "secondary"
               } 
             ],
             ['core/post-date', 

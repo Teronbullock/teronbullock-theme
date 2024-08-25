@@ -9,7 +9,6 @@ function tb_theme_setup() {
   define( 'TB_TEXT_DOMAIN', 'tb-theme' );
 }
 
-
 // enqueue css into the editor.
 add_action('enqueue_block_assets', 'tb_theme_block_editor_styles');
 function tb_theme_block_editor_styles() {
@@ -19,7 +18,6 @@ function tb_theme_block_editor_styles() {
   );
 }
 
-
 // Register custom core block stylesheets
 add_action('enqueue_block_assets', 'tb_theme_enqueue_custom_core_block_assets');
 function tb_theme_enqueue_custom_core_block_assets() {
@@ -28,7 +26,6 @@ function tb_theme_enqueue_custom_core_block_assets() {
     'core/columns',
     'core/button'
   );
-
 
   // check if any core blocks are being used
   foreach ($core_blocks as $core_block) {

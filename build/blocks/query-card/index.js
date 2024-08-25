@@ -113,38 +113,18 @@ function Edit({
     "layout": {
       "type": "default"
     }
-  }, [['core/post-terms', {
-    "term": "appearances-categories",
-    "separator": "",
-    "className": "tb-theme-post-cat",
+  }, [['tb-theme/category-display-block', {
     "style": {
-      "spacing": {
-        "margin": {
-          "left": "0",
-          "right": "1.5rem"
-        },
-        "padding": {
-          "top": "0.5rem",
-          "bottom": "0.5rem",
-          "left": "0.5rem",
-          "right": "0.5rem"
-        }
-      },
-      "typography": {
-        "textTransform": "uppercase"
-      },
       "elements": {
         "link": {
           "color": {
-            "text": "var:preset|color|white"
+            "text": "var:preset|color|secondary"
           }
         }
       }
     },
-    "backgroundColor": "secondary",
-    "textColor": "white",
-    "fontSize": "small",
-    "fontFamily": "heading"
+    "backgroundColor": "white",
+    "textColor": "secondary"
   }], ['core/post-date', {
     "style": {
       "spacing": {
