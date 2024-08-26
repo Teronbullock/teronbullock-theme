@@ -198,6 +198,12 @@
             }
           ]
         }
+      },
+      "core/group" {
+        "layout": {
+          "contentSize": "900px",
+          "wideSize": "1320px"
+        }
       }
     }
   },
