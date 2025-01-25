@@ -10,7 +10,6 @@
   margin-top: 0 !important;
 }
 
-.single-project .entry-content,
 .is-style-container {
   width: 100%;
   padding-left: 1rem;
@@ -19,13 +18,11 @@
   margin-right: auto;
 }
 @media (min-width: 768px) {
-  .single-project .entry-content,
   .is-style-container {
     max-width: 768px !important;
   }
 }
 @media (min-width: 992px) {
-  .single-project .entry-content,
   .is-style-container {
     max-width: 960px !important;
     padding-left: 0;
@@ -33,15 +30,18 @@
   }
 }
 @media (min-width: 1200px) {
-  .single-project .entry-content,
   .is-style-container {
     max-width: 1140px !important;
   }
 }
 @media (min-width: 1400px) {
-  .single-project .entry-content,
   .is-style-container {
     max-width: 1320px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .is-style-container {
+    max-width: 1600px !important;
   }
 }
 
@@ -552,6 +552,17 @@ html #wpadminbar {
   text-decoration: underline;
 }
 
+.header-group {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 992px) {
+  .header-group {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 /* ================================= 
   navbar
 ==================================== */
@@ -699,19 +710,48 @@ cta
   box-shadow: 16px 18px 12px -17px rgba(2, 8, 12, 0.65);
 }
 
-.single-projects .wp-block-cover,
-.single-projects .wp-block-image img {
-  box-shadow: 16px 18px 12px -17px rgba(2, 8, 12, 0.65);
+.single-project .wp-block-query {
+  margin-block-start: 56px;
 }
-
-@media (max-width: 768px) {
-  .single-project .project-header-spacer {
-    height: 0 !important;
+@media (min-width: 768px) {
+  .single-project .wp-block-query {
+    margin-block-start: 65px;
   }
 }
-@media (max-width: 1400px) {
+.single-project .wp-block-cover {
+  min-height: 315px;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 375px) {
   .single-project .wp-block-cover {
-    border-radius: 0rem !important;
+    min-height: 330px;
+  }
+}
+@media (min-width: 768px) {
+  .single-project .wp-block-cover {
+    min-height: 430px;
+  }
+}
+@media (min-width: 992px) {
+  .single-project .wp-block-cover {
+    max-width: 960px !important;
+    min-height: 530px;
+    border-radius: 4px;
+  }
+}
+@media (min-width: 1200px) {
+  .single-project .wp-block-cover {
+    max-width: 1140px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .single-project .wp-block-cover {
+    max-width: 1320px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .single-project .wp-block-cover {
+    max-width: 1600px !important;
   }
 }
 .single-project .group-title {

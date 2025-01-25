@@ -17,18 +17,18 @@
 .home {
   .header {
     cursor: default;
-    transition: .5s;  
+    transition: 0.5s;
   }
-  
+
   // header at top of page
   .header.top {
     background-color: transparent;
   }
-  
+
   .header.top .wp-block-site-title,
   .header.top {
     color: var.$color-white;
-  } 
+  }
 }
 
 .header {
@@ -61,5 +61,15 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.header-group {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  @include inc.mq-up(lg) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }

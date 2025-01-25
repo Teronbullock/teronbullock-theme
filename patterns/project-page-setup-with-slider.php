@@ -6,8 +6,8 @@
  * Description: Theme custom project page setup
  */
 ?>
-<!-- wp:group {"metadata":{"name":"group-tech-stack"},"align":"full","className":"is-style-default","style":{"spacing":{"padding":{"right":"0","left":"0"},"margin":{"bottom":"5rem"}}},"layout":{"type":"constrained","contentSize":"900px","wideSize":"1320px"}} -->
-<div class="wp-block-group alignfull is-style-default" style="margin-bottom:5rem;padding-right:0;padding-left:0"><!-- wp:columns {"align":"full","className":"project-cta is-style-default"} -->
+<!-- wp:group {"metadata":{"name":"group-tech-stack"},"align":"full","className":"is-style-default project-tech-stack","style":{"spacing":{"padding":{"right":"0","left":"0"},"margin":{"bottom":"3rem"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull is-style-default project-tech-stack" style="margin-bottom:3rem;padding-right:0;padding-left:0"><!-- wp:columns {"align":"full","className":"project-cta is-style-default"} -->
 <div class="wp-block-columns alignfull project-cta is-style-default"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"className":"entry-tech-stack","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"fontSize":"medium"} -->
 <p class="entry-tech-stack has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><strong>Tech Stack:</strong> React, Express.js, Node, PostgreSQL, Sequelize, PostgreSQL, JavaScript, SASS, Tailwind CSS</p>
@@ -26,8 +26,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"is-style-container","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull is-style-container"><!-- wp:columns -->
+<!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull is-style-default"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:video {"id":1017,"style":{"spacing":{"margin":{"bottom":"5.5rem"}}}} -->
 <figure style="margin-bottom:5.5rem" class="wp-block-video"><video controls poster="https://teronbullock.com/wp-content/uploads/2022/07/Screenshot-2024-01-01-at-1.53.44 PM.jpg" src="http://teronbullock.local/wp-content/uploads/2024/01/Flashlearn-demo.mov"></video></figure>

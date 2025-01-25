@@ -78,6 +78,12 @@ function tb_theme_register_block_styles() {
         'label' => 'Container',
       )
     ),
+    'core/query'      => array(
+      array(
+        'name'  => 'container',
+        'label' => 'Container',
+      )
+    ),
   );
 
 

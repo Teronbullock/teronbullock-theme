@@ -1,0 +1,48 @@
+@use '../../00-helpers/variables' as var;
+@use '../../00-helpers/inc' as inc;
+
+
+.single-project {
+  .wp-block-query {
+    margin-block-start: 56px;
+
+    @include inc.mq-up('md') {
+      margin-block-start: 65px;
+    }
+  }
+
+  .wp-block-cover {
+    min-height: 315px;
+    margin-bottom: 1.5rem;
+
+    @include inc.mq-up(sm) {
+      min-height: 330px;  
+    }
+
+    @include inc.mq-up(md) {
+      min-height: 430px;  
+    }
+
+    @include inc.mq-up(lg) {
+      max-width: 960px !important;
+      min-height: 530px;  
+      border-radius: 4px;
+    }
+
+    @include inc.mq-up(xl) {
+      max-width: 1140px !important;
+    }
+
+    @include inc.mq-up('2xl') {
+      max-width: 1320px !important;
+    }
+
+    @include inc.mq-up('3xl') {
+      max-width: 1600px!important;
+    }
+  }
+
+  .group-title {
+    margin-block-start: 0;
+  }
+}
