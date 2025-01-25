@@ -24,7 +24,10 @@ function tb_theme_enqueue_custom_core_block_assets() {
   $core_blocks = array(
     'core/group',
     'core/columns',
-    'core/button'
+    'core/button',
+    'core/cover',
+    'core/heading',
+    'core/query',
   );
 
   // check if any core blocks are being used

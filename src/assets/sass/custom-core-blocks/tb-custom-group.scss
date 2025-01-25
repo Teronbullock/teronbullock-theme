@@ -2,17 +2,40 @@
 @use '../00-helpers/inc' as inc;
 
 .tb-theme-group-project-query {
-
-  .wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background):hover,
-  .wp-block-button.is-style-outline.active>.wp-block-button__link:not(.has-background)
-   {
+  .wp-block-button.is-style-outline
+    > .wp-block-button__link:not(.has-background):hover,
+  .wp-block-button.is-style-outline.active
+    > .wp-block-button__link:not(.has-background) {
     background-color: var.$color-red;
     color: var.$color-white;
   }
-
-
-} 
+}
 
 .is-style-tb-theme-group-project-header {
   margin: 0;
+}
+
+.section-group--about {
+  @include inc.mq-down(md) {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .wp-block-heading {
+    @include inc.mq-down(md) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .wp-block-image {
+    @include inc.mq-down(md) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .wp-block-image img {
+    @include inc.mq-down(md) {
+      width: 75%;
+    }
+  }
 }

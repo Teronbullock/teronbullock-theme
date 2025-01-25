@@ -1,6 +1,7 @@
 // 01-base
 @use './01-base/global';
 @use './01-base/utilities';
+@use './01-base/typography';
 
 // 02-layout
 @use './02-layouts/header';
@@ -8,7 +9,6 @@
 @use './02-layouts/cta';
 @use './02-layouts/projects';
 @use './02-layouts/base-layouts';
-@use './02-layouts/sections';
 
 // 03-components
 @use './04-components/btn';

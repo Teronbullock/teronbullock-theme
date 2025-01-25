@@ -66,12 +66,20 @@
         {
           "name": "Small",
           "slug": "small",
-          "size": "1.25rem"
+          "size": "1.25rem",
+          "fluid": {
+            "min": "0.875rem",
+            "max": "1.25rem"
+          }
         },
         {
           "name": "Medium",
           "slug": "medium",
-          "size": "1.375rem"
+          "size": "1.375rem",
+          "fluid": {
+            "min": "1rem",
+            "max": "1.5rem"
+          }
         },
         {
           "name": "Large",
@@ -81,7 +89,11 @@
         {
           "name": "Extra Large",
           "slug": "x-large",
-          "size": "3.75rem"
+          "size": "3.75rem",
+          "fluid": {
+            "min": "2.325rem",
+            "max": "3.75rem"
+          }
         }
       ],
       "fontFamilies": [
@@ -94,27 +106,35 @@
               "fontFamily": "Poppins",
               "fontStyle": "regular",
               "fontStretch": "normal",
-              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-regular.woff2"]
+              "src": [
+                "file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-regular.woff2"
+              ]
             },
             {
               "fontFamily": "Poppins",
               "fontStyle": "italic",
               "fontStretch": "normal",
-              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-italic.woff2"]
+              "src": [
+                "file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-italic.woff2"
+              ]
             },
             {
               "fontFamily": "Poppins",
               "fontWeight": "500",
               "fontStyle": "normal",
               "fontStretch": "normal",
-              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-500.woff2"]
+              "src": [
+                "file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-500.woff2"
+              ]
             },
             {
               "fontFamily": "Poppins",
               "fontWeight": "600",
               "fontStyle": "normal",
               "fontStretch": "normal",
-              "src": ["file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-600.woff2"]
+              "src": [
+                "file:./assets/fonts/poppins-v20-latin/poppins-v20-latin-600.woff2"
+              ]
             }
           ]
         },
@@ -127,20 +147,26 @@
               "fontFamily": "Lora",
               "fontStyle": "regular",
               "fontStretch": "normal",
-              "src": ["file:./assets/fonts/lora-v32-latin/lora-v32-latin-regular.woff2"]
+              "src": [
+                "file:./assets/fonts/lora-v32-latin/lora-v32-latin-regular.woff2"
+              ]
             },
             {
               "fontFamily": "Lora",
               "fontStyle": "italic",
               "fontStretch": "normal",
-              "src": ["file:./assets/fonts/lora-v32-latin/lora-v32-latin-italic.woff2"]
+              "src": [
+                "file:./assets/fonts/lora-v32-latin/lora-v32-latin-italic.woff2"
+              ]
             },
             {
               "fontFamily": "Lora",
               "fontWeight": "600",
               "fontStyle": "normal",
               "fontStretch": "normal",
-              "src": ["file:./assets/fonts/lora-v32-latin/lora-v32-latin-600.woff2"]
+              "src": [
+                "file:./assets/fonts/lora-v32-latin/lora-v32-latin-600.woff2"
+              ]
             }
           ]
         }
@@ -149,6 +175,7 @@
     "blocks": {
       "core/heading": {
         "typography": {
+          "fluid": true,
           "fontSizes": [
             {
               "name": "Small",
@@ -168,13 +195,18 @@
             {
               "name": "Extra Large",
               "slug": "x-large",
-              "size": "3.75rem"
+              "size": "3.75rem",
+              "fluid": {
+                "min": "2.325rem",
+                "max": "3.75rem"
+              }
             }
           ]
         }
       },
       "core/post-title": {
         "typography": {
+          "fluid": true,
           "fontSizes": [
             {
               "name": "Small",
@@ -184,7 +216,11 @@
             {
               "name": "Medium",
               "slug": "medium",
-              "size": "2.5rem"
+              "size": "2.5rem",
+              "fluid": {
+                "min": "1rem",
+                "max": "2.5rem"
+              }
             },
             {
               "name": "Large",
@@ -194,7 +230,11 @@
             {
               "name": "Extra Large",
               "slug": "x-large",
-              "size": "3rem"
+              "size": "3rem",
+              "fluid": {
+                "min": "2.325rem",
+                "max": "3rem"
+              }
             }
           ]
         }
@@ -227,56 +267,56 @@
         }
       }
     },
-   "typography": {
-    "fontFamily": "var(--wp--preset--font-family--body)"
-   },
-   "blocks": {
-    "core/site-title": {
-      "typography": {
-        "fontFamily": "var(--wp--preset--font-family--heading)"
-      }
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)"
     },
-    "core/navigation": {
-      "typography": {
-        "fontFamily": "var(--wp--preset--font-family--heading)"
-      }
-    },
-    "tb-theme/category-display-block": {
-     "color": {
-       "background": "var(--wp--preset--color--primary)",
-       "text": "var(--wp--preset--color--white)"
-     },
-     "spacing": {
-      "padding": {
-        "top": "0.5rem",
-        "right": "0.5rem",
-        "bottom": "0.5rem",
-        "left": "0.5rem"
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        }
       },
-      "margin": {
-        "right": "0.5rem"
-      }
-     }
-    },
-    "core/paragraph": {
-      "typography": {
-        "fontFamily": "var(--wp--preset--font-family--body)",
-        "fontSize": "var(--wp--preset--font-size--small)",
-        "lineHeight": "1.4"
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        }
+      },
+      "tb-theme/category-display-block": {
+        "color": {
+          "background": "var(--wp--preset--color--primary)",
+          "text": "var(--wp--preset--color--white)"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.5rem",
+            "right": "0.5rem",
+            "bottom": "0.5rem",
+            "left": "0.5rem"
+          },
+          "margin": {
+            "right": "0.5rem"
+          }
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--body)",
+          "fontSize": "var(--wp--preset--font-size--small)",
+          "lineHeight": "1.4"
+        }
       }
     }
-   }
   },
   "templateParts": [
-		{
-			"area": "header",
-			"name": "header",
-			"title": "Header"
-		},
-		{
-			"area": "footer",
-			"name": "footer",
-			"title": "Footer"
-		}
-	]
+    {
+      "area": "header",
+      "name": "header",
+      "title": "Header"
+    },
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Footer"
+    }
+  ]
 }

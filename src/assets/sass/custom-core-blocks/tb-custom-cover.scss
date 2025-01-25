@@ -1,0 +1,8 @@
+@use '../00-helpers/variables' as var;
+@use '../00-helpers/inc' as inc;
+
+.home .wp-block-cover .wp-block-cover__background.has-background-dim {
+  @include inc.mq-up(md) {
+    opacity: 0;
+  }
+}

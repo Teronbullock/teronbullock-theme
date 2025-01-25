@@ -1,0 +1,8 @@
+@use '../../00-helpers/inc' as inc;
+@use '../../00-helpers/variables' as var;
+
+p {
+  @include inc.mq-down(md) {
+    line-height: 1.5 !important;
+  }
+}

@@ -11,7 +11,7 @@
     margin: 0 5px; 
   }
 
-  @include inc.mq-up(xxl) {
+  @include inc.mq-up('2xl') {
     margin: 0 20px; 
   }
 }

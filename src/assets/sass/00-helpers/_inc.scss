@@ -26,12 +26,12 @@
     @media (min-width: var.$break-xl) {
       @content;
     }
-  } @else if $break == 'xxl' {
-    @media (min-width: var.$break-xxl) {
+  } @else if $break == '2xl' {
+    @media (min-width: var.$break-2xl) {
       @content;
     }
-  } @else if $break == 'xxxl' {
-    @media (min-width: var.$break-xxxl) {
+  } @else if $break == '3xl' {
+    @media (min-width: var.$break-3xl) {
       @content;
     }
   }
@@ -61,12 +61,12 @@
     @media (max-width: var.$break-xl) {
       @content;
     }
-  } @else if $break == 'xxl' {
-    @media (max-width: var.$break-xxl) {
+  } @else if $break == '2xl' {
+    @media (max-width: var.$break-2xl) {
       @content;
     }
-  } @else if $break == 'xxxl' {
-    @media (max-width: var.$break-xxxl) {
+  } @else if $break == '3xl' {
+    @media (max-width: var.$break-3xl) {
       @content;
     }
   }

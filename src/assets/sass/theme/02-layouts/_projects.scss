@@ -1,7 +1,29 @@
+@use '../../00-helpers/variables' as var;
+@use '../../00-helpers/inc' as inc;
+
 .single-projects {
- 
+
   .wp-block-cover,
   .wp-block-image img {
     box-shadow: 16px 18px 12px -17px rgba(2, 8, 12, 0.65);
   }
+}
+
+.single-project {
+  .project-header-spacer {
+    @include inc.mq-down(md) {
+      height: 0 !important;
+    }
+  }
+
+  .wp-block-cover {
+    @include inc.mq-down('2xl') {
+      border-radius: 0rem !important;
+    }
+  }
+
+  .group-title {
+    margin-block-start: 0;
+  }
+
 }

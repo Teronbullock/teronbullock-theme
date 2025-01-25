@@ -1,0 +1,12 @@
+@use '../00-helpers/variables' as var;
+@use '../00-helpers/inc' as inc;
+
+.home {
+  .wp-block-heading.has-large-font-size {
+    @include inc.mq-down(md) {
+      font-size: 2.5rem !important;
+      line-height: 1.4;
+      margin-bottom: 2rem;
+    }
+  }
+}

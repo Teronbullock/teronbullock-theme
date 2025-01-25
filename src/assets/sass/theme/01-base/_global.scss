@@ -1,11 +1,16 @@
 @use '../../00-helpers/inc' as inc;
 @use '../../00-helpers/variables' as var;
 
+* {
+  box-sizing: border-box;
+}
+
 :where(body .is-layout-flow) > *,
 :where(.wp-site-blocks) > .entry-content {
   margin-top: 0 !important;
 }
 
+.single-project .entry-content,
 .is-style-container {
   width: 100%;
   padding-left: 1rem;
@@ -14,24 +19,30 @@
   margin-right: auto;
 
   @include inc.mq-up(md) {
-    max-width: 720px!important;
+    max-width: 768px!important;
   }
 
   @include inc.mq-up(lg) {
     max-width: 960px!important;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @include inc.mq-up(xl) {
     max-width: 1140px!important;
   }
 
-  @include inc.mq-up(xxl) {
+  @include inc.mq-up('2xl') {
     max-width: 1320px!important;
   }
 
-  // @include inc.mq-up(xxxl) {
+  // @include inc.mq-up(3xl) {
   //   max-width: 1840px!important;
   // }
+}
+
+.is-style-container {
+  width: 100%;
 }
 
 .home .wp-block-post-title a {
@@ -45,4 +56,9 @@
 
 .tb-theme-post-cat a {
   text-decoration: none;
+}
+
+// admin bar
+html #wpadminbar {
+  position: fixed;
 }

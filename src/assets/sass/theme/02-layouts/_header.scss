@@ -47,11 +47,12 @@
   padding: 0;
   font-size: 16px;
   letter-spacing: 0.8px;
-  display: none;
   font-weight: 300;
+}
 
-  @include inc.mq-up(lg) {
-    display: block;
+.home .header .wp-block-site-title {
+  @include inc.mq-down(lg) {
+    display: none;
   }
 }
 

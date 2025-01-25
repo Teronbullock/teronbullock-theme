@@ -72,6 +72,12 @@ function tb_theme_register_block_styles() {
         'label' => 'Project',
       )
     ),
+    'core/post-content' => array(
+      array(
+        'name'  => 'container',
+        'label' => 'Container',
+      )
+    ),
   );
 
 

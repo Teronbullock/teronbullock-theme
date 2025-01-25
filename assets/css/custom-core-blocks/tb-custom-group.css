@@ -1,1 +1,36 @@
-.tb-theme-group-project-query .wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background):hover,.tb-theme-group-project-query .wp-block-button.is-style-outline.active>.wp-block-button__link:not(.has-background){background-color:#d74058;color:#fff}.is-style-tb-theme-group-project-header{margin:0}
+/* ================================= 
+  Media Queries
+==================================== */
+.tb-theme-group-project-query .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background):hover,
+.tb-theme-group-project-query .wp-block-button.is-style-outline.active > .wp-block-button__link:not(.has-background) {
+  background-color: #d74058;
+  color: #fff;
+}
+
+.is-style-tb-theme-group-project-header {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .section-group--about {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .section-group--about .wp-block-heading {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .section-group--about .wp-block-image {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .section-group--about .wp-block-image img {
+    width: 75%;
+  }
+}
+
+/*# sourceMappingURL=tb-custom-group.css.map */

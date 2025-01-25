@@ -9,6 +9,14 @@
 //   }
 
 // }
+.home {
+  .wp-block-cover .wp-block-columns {
+    @include inc.mq-down(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
 
 .wp-block-columns--tb-mobile-wrap {
   padding-left: 2rem;

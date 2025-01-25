@@ -30,3 +30,23 @@
     }
   }
 }
+
+.post-type-archive-project .wp-block-buttons,
+.tax-project_category .wp-block-buttons {
+  flex-direction: column;
+  gap: unset;
+
+  @media(min-width: 486px) {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.post-type-archive-project .wp-block-button .wp-block-button__link,
+.tax-project_category .wp-block-button .wp-block-button__link {
+  margin: .65rem 0;
+
+  @media(min-width: 486px) {
+    margin: 1rem 0;
+  }
+}
