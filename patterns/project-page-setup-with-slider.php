@@ -6,9 +6,9 @@
  * Description: Theme custom project page setup
  */
 ?>
-<!-- wp:group {"metadata":{"name":"group-tech-stack"},"align":"full","className":"is-style-default project-tech-stack","style":{"spacing":{"padding":{"right":"0","left":"0"},"margin":{"bottom":"3rem"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull is-style-default project-tech-stack" style="margin-bottom:3rem;padding-right:0;padding-left:0"><!-- wp:columns {"align":"full","className":"project-cta is-style-default"} -->
-<div class="wp-block-columns alignfull project-cta is-style-default"><!-- wp:column -->
+<!-- wp:group {"metadata":{"name":"group-tech-stack"},"align":"full","className":"is-style-default project-tech-stack","style":{"spacing":{"padding":{"right":"0","left":"0"},"margin":{"bottom":"0rem"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull is-style-default project-tech-stack" style="margin-bottom:0rem;padding-right:0;padding-left:0"><!-- wp:columns {"align":"full","className":"is-style-default"} -->
+<div class="wp-block-columns alignfull is-style-default"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:paragraph {"className":"entry-tech-stack","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}},"fontSize":"medium"} -->
 <p class="entry-tech-stack has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><strong>Tech Stack:</strong> React, Express.js, Node, PostgreSQL, Sequelize, PostgreSQL, JavaScript, SASS, Tailwind CSS</p>
 <!-- /wp:paragraph -->

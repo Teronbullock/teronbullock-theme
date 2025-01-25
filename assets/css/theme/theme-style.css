@@ -757,6 +757,9 @@ cta
 .single-project .group-title {
   margin-block-start: 0;
 }
+.single-project .project-tech-stack {
+  margin-bottom: 3rem;
+}
 
 /* ================================= 
   base layouts
