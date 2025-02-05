@@ -10,3 +10,26 @@
     }
   }
 }
+
+.wp-block-heading--business-card-title {
+  font-size: clamp(1.875rem, 2.5vw, 2.18rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.wp-block-heading--business-card-subtitle {
+  font-size: clamp(1.25rem, 2.5vw, 1.25rem);
+  font-weight: 500;
+  margin-bottom: 1rem !important;
+
+  @include inc.mq-up(md) {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.wp-block-heading--business-card-title-link,
+.wp-block-heading--business-card-title-link a,
+.wp-block-heading--business-card-title-link a:visited {
+  text-decoration: none;
+  font-size: 16px;
+}

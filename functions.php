@@ -28,6 +28,7 @@ function tb_theme_enqueue_custom_core_block_assets() {
     'core/cover',
     'core/heading',
     'core/query',
+    'core/paragraph',
   );
 
   // check if any core blocks are being used
@@ -50,8 +51,8 @@ function tb_theme_enqueue_custom_core_block_assets() {
 
 
 // enqueue js into the editor.
-add_action('init', 'tb_theme_scripts');
-// add_action('enqueue_block_editor_assets', 'tb_theme_scripts');
+// add_action('init', 'tb_theme_scripts');
+add_action('enqueue_block_assets', 'tb_theme_scripts');
 function tb_theme_scripts() {
   wp_enqueue_script(
     'theme-main-script',

@@ -35,3 +35,47 @@
     }
   }
 }
+
+.wp-block-columns.wp-block-columns--profile {
+  margin-bottom: .5rem;
+
+  .wp-block-column--profile-img {
+    overflow: hidden;
+    
+    @include inc.mq-down(md) {
+      background-color: unset !important;
+      margin-bottom: 1rem;
+    }
+
+    @include inc.mq-up(md) {
+      border-radius: 10px 0 0 10px;
+    }
+  }
+
+  .wp-block-column--profile-img img {
+    @include inc.mq-down(md) {
+      width: 125px;
+      border-radius: 9999px;
+      display: block;
+      margin: 0 auto;
+
+    }
+  }
+
+  .wp-block-column--profile-content {
+    padding: 0rem 1.25rem 0rem;
+    overflow: hidden;
+    color: var.$color-black !important;
+
+    @include inc.mq-down(md) {
+      text-align: center;
+      background-color: unset !important;
+    }
+
+    @include inc.mq-up(md) {
+      padding: 2.75rem 2rem 1rem;
+      border-radius: 0 10px 10px 0;
+      color: var.$color-white !important;
+    }
+  }
+}

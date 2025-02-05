@@ -18,6 +18,19 @@
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
 }
 
+.wp-block-button.wp-block-button--business-card-cta .wp-block-button__link {
+  margin: .5rem 0;
+  padding: 1rem 0.5rem;
+}
+
+.wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link {
+  margin: 0;
+}
+
+.wp-block-buttons-business-card-contact-list {
+  gap: 1rem !important;
+}
+
 @each $color, $value in var.$colors {
   .wp-block-button.is-style-outline .wp-block-button__link.has-#{$color}-color {
   

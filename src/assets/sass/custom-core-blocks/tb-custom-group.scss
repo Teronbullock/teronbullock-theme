@@ -39,3 +39,24 @@
     }
   }
 }
+
+.wp-block-group {
+  &.wp-block-group--header {
+    padding-bottom: 1rem;
+
+    @include inc.mq-up(md) {
+      padding-bottom: 2rem;
+    }
+  }
+
+}
+
+.page-template-wp-custom-template-business-card,
+.wp-admin .wp-block-group--business-card {
+  background-color: #e6e4e4;
+}
+
+.wp-block-group--business-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
