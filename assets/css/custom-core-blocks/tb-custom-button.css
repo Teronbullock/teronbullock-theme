@@ -26,7 +26,7 @@
   margin: 0;
 }
 .wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link:hover, .wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link:focus, .wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link:active {
-  background-color: transparent;
+  background-color: transparent !important;
   color: #141515 !important;
   border: 1px solid #141515;
 }
