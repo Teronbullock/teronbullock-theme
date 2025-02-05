@@ -21,6 +21,11 @@
   margin: 0.5rem 0;
   padding: 1rem 0.5rem;
 }
+.wp-block-button.wp-block-button--business-card-cta .wp-block-button__link:hover, .wp-block-button.wp-block-button--business-card-cta .wp-block-button__link:focus, .wp-block-button.wp-block-button--business-card-cta .wp-block-button__link:active {
+  background-color: #141515 !important;
+  color: #fff !important;
+  border: 1px solid #d74058;
+}
 
 .wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link {
   margin: 0;
@@ -128,6 +133,9 @@
   height: 48px;
   border-radius: 9999px;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=tb-custom-button.css.map */
