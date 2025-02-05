@@ -124,9 +124,10 @@
 }
 
 .wp-block-button--close .wp-block-button__link {
-  width: 48px;
+  min-width: 48px;
   height: 48px;
   border-radius: 9999px;
+  padding: 0;
 }
 
 /*# sourceMappingURL=tb-custom-button.css.map */
