@@ -25,6 +25,11 @@
 .wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link {
   margin: 0;
 }
+.wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link:hover, .wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link:focus, .wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link:active {
+  background-color: transparent;
+  color: #141515 !important;
+  border: 1px solid #141515;
+}
 
 .wp-block-buttons-business-card-contact-list {
   gap: 1rem !important;
@@ -116,6 +121,12 @@
   .tax-project_category .wp-block-button .wp-block-button__link {
     margin: 1rem 0;
   }
+}
+
+.wp-block-button--close .wp-block-button__link {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
 }
 
 /*# sourceMappingURL=tb-custom-button.css.map */
