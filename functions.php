@@ -61,6 +61,13 @@ function tb_theme_scripts() {
   );
 }
 
+// allow .vcf files to be uploaded to the media library
+add_filter('upload_mimes', 'tb_theme_mime_types');
+function tb_theme_mime_types($mimes) {
+  $mimes['vcf'] = 'text/vcard';
+  return $mimes;
+}
+
 
 // Includes php files from lib folder.
 foreach (glob( dirname(__FILE__) . '/inc/*.php' ) as $file ){
