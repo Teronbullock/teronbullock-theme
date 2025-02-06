@@ -23,7 +23,7 @@
 }
 .wp-block-button.wp-block-button--business-card-cta .wp-block-button__link:hover, .wp-block-button.wp-block-button--business-card-cta .wp-block-button__link:focus, .wp-block-button.wp-block-button--business-card-cta .wp-block-button__link:active {
   background-color: transparent !important;
-  color: #fff !important;
+  color: #141515 !important;
   border: 1px solid #d74058;
 }
 
