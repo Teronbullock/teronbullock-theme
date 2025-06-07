@@ -5,7 +5,7 @@ cta
 
 .cta .wpcf7 {
   max-width: 1200px;
-  width: 100%;         
+  width: 100%;
 
   input,
   textarea {
@@ -27,15 +27,8 @@ cta
       color: var.$color-black;
     }
   }
-
 }
-
 
 .wpcf7-spinner {
   display: none;
-}
-
-
-#contact .wp-block-group.has-background {
-  box-shadow: 16px 18px 12px -17px rgba(2,8,12,.65);
 }

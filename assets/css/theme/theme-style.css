@@ -706,10 +706,6 @@ cta
   display: none;
 }
 
-#contact .wp-block-group.has-background {
-  box-shadow: 16px 18px 12px -17px rgba(2, 8, 12, 0.65);
-}
-
 .single-project .wp-block-query {
   margin-block-start: 56px;
 }
