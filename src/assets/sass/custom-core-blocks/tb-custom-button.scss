@@ -1,25 +1,24 @@
 @use '../00-helpers/variables' as var;
 @use '../00-helpers/inc' as inc;
 
-
 .wp-block-button .wp-block-button__link {
   min-width: 114px;
   margin: 1rem 0;
   padding: 0.75rem 0.5rem;
   border-radius: 3px;
   font-weight: 500;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   white-space: nowrap;
   outline: none;
   transition-timing-function: ease;
-  transition: padding .3s;
+  transition: padding 0.3s;
   text-decoration: none !important;
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
 }
 
 .wp-block-button.wp-block-button--business-card-cta .wp-block-button__link {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   padding: 1rem 0.5rem;
 
   &:hover,
@@ -31,7 +30,8 @@
   }
 }
 
-.wp-block-button.wp-block-button--business-card-contact-item .wp-block-button__link {
+.wp-block-button.wp-block-button--business-card-contact-item
+  .wp-block-button__link {
   margin: 0;
   &:hover,
   &:focus,
@@ -48,13 +48,23 @@
 
 @each $color, $value in var.$colors {
   .wp-block-button.is-style-outline .wp-block-button__link.has-#{$color}-color {
-  
     &:hover {
       background-color: $value !important;
       color: var.$color-white !important;
       border-color: $value !important;
-      transition-timing-function: cubic-bezier(1,-0.02,.7,.93) !important;
-      transition: background-color .25s, color .60s;
+      transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
+      transition:
+        background-color 0.25s,
+        color 0.6s;
+    }
+  }
+
+  @if $color == 'white' {
+    .wp-block-button.is-style-outline
+      .wp-block-button__link.has-#{$color}-color {
+      &:hover {
+        color: var.$color-black !important;
+      }
     }
   }
 }
@@ -64,7 +74,7 @@
   flex-direction: column;
   gap: unset;
 
-  @media(min-width: 486px) {
+  @media (min-width: 486px) {
     flex-direction: row;
     gap: 24px;
   }
@@ -72,9 +82,9 @@
 
 .post-type-archive-project .wp-block-button .wp-block-button__link,
 .tax-project_category .wp-block-button .wp-block-button__link {
-  margin: .65rem 0;
+  margin: 0.65rem 0;
 
-  @media(min-width: 486px) {
+  @media (min-width: 486px) {
     margin: 1rem 0;
   }
 }

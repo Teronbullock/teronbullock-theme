@@ -5,22 +5,21 @@
 @use '../../00-helpers/variables' as var;
 
 .btn,
-.cta .wpcf7 .btn-cta-submit-wrapper { 
+.cta .wpcf7 .btn-cta-submit-wrapper {
   min-width: 114px;
   margin: 1rem 0;
   padding: 0.75rem 0.5rem;
   border-radius: 3px;
   font-weight: 500;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   white-space: nowrap;
   outline: none;
   transition-timing-function: ease;
-  transition: padding .3s;
+  transition: padding 0.3s;
   text-decoration: none !important;
   font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
 }
-
 
 @each $color, $value in var.$colors {
   .btn.btn--outline-#{$color} {
@@ -31,12 +30,21 @@
       background-color: $value !important;
       color: var.$color-white !important;
       border-color: $value !important;
-      transition-timing-function: cubic-bezier(1,-0.02,.7,.93) !important;
-      transition: background-color .25s, color .60s;
+      transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
+      transition:
+        background-color 0.25s,
+        color 0.6s;
+    }
+  }
+
+  @if $color != 'white' {
+    .btn.btn--#{$color} {
+      &:hover {
+        color: var.$color-black !important;
+      }
     }
   }
 }
-
 
 .cta .wpcf7 .btn-cta-submit-wrapper {
   display: inline-block;
@@ -46,7 +54,6 @@
     display: none;
   }
 }
-
 
 .cta .wpcf7 .btn-cta-submit {
   all: unset;

@@ -825,6 +825,10 @@ cta
   transition: background-color 0.25s, color 0.6s;
 }
 
+.btn.btn--primary:hover {
+  color: #141515 !important;
+}
+
 .btn.btn--outline-secondary {
   color: #102D12 !important;
   border: 2px solid;
@@ -835,6 +839,10 @@ cta
   border-color: #102D12 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
   transition: background-color 0.25s, color 0.6s;
+}
+
+.btn.btn--secondary:hover {
+  color: #141515 !important;
 }
 
 .btn.btn--outline-tertiary {
@@ -849,6 +857,10 @@ cta
   transition: background-color 0.25s, color 0.6s;
 }
 
+.btn.btn--tertiary:hover {
+  color: #141515 !important;
+}
+
 .btn.btn--outline-jasmine {
   color: #FFD275 !important;
   border: 2px solid;
@@ -859,6 +871,10 @@ cta
   border-color: #FFD275 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
   transition: background-color 0.25s, color 0.6s;
+}
+
+.btn.btn--jasmine:hover {
+  color: #141515 !important;
 }
 
 .btn.btn--outline-red {
@@ -873,6 +889,10 @@ cta
   transition: background-color 0.25s, color 0.6s;
 }
 
+.btn.btn--red:hover {
+  color: #141515 !important;
+}
+
 .btn.btn--outline-gray {
   color: #F5F5F5 !important;
   border: 2px solid;
@@ -883,6 +903,10 @@ cta
   border-color: #F5F5F5 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
   transition: background-color 0.25s, color 0.6s;
+}
+
+.btn.btn--gray:hover {
+  color: #141515 !important;
 }
 
 .btn.btn--outline-white {
@@ -907,6 +931,10 @@ cta
   border-color: #141515 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
   transition: background-color 0.25s, color 0.6s;
+}
+
+.btn.btn--black:hover {
+  color: #141515 !important;
 }
 
 .cta .wpcf7 .btn-cta-submit-wrapper {
