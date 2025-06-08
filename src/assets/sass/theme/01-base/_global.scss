@@ -62,6 +62,8 @@ html #wpadminbar {
   position: fixed;
 }
 
-.has-circle-border {
+// circle border
+.has-circle-border,
+.has-circle-border img {
   border-radius: 50%;
 }
