@@ -63,7 +63,15 @@ html #wpadminbar {
 }
 
 // circle border
-.has-circle-border,
-.has-circle-border .n2-ss-item-image-content {
+.has-circle-border {
   border-radius: 50%;
+}
+
+// real testimonials style
+.sp-testimonial-free {
+  padding: 1.5rem 1rem;
+}
+
+.sp-testimonial-free-section .sp-testimonial-client-testimonial p {
+  font-family: poppins, sans-serif;
 }
