@@ -70,12 +70,22 @@ html #wpadminbar {
   border-radius: 50%;
 }
 
+.sp-testimonial-free-wrapper {
+  min-width: 100%;
+}
+
 .sp-testimonial-free {
-  padding: 1.5rem 1rem !important;
+  padding: 1.5rem 1rem;
+}
+
+.sp-testimonial-free-section p,
+.sp-testimonial-free-section .sp-testimonial-client-designation {
+  font-family: poppins, sans-serif;
 }
 
 .sp-testimonial-free-section .sp-testimonial-client-testimonial p {
-  font-family: poppins, sans-serif !important;
+  font-size: 1.125rem;
+  line-height: 1.75 !important;
 }
 
 .bg-primary {
