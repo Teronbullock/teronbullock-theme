@@ -18,25 +18,25 @@
   margin-right: auto;
 
   @include inc.mq-up(md) {
-    max-width: 768px!important;
+    max-width: 768px !important;
   }
 
   @include inc.mq-up(lg) {
-    max-width: 960px!important;
+    max-width: 960px !important;
     padding-left: 0;
     padding-right: 0;
   }
 
   @include inc.mq-up(xl) {
-    max-width: 1140px!important;
+    max-width: 1140px !important;
   }
 
   @include inc.mq-up('2xl') {
-    max-width: 1320px!important;
+    max-width: 1320px !important;
   }
 
   @include inc.mq-up('3xl') {
-    max-width: 1600px!important;
+    max-width: 1600px !important;
   }
 }
 
@@ -60,4 +60,8 @@
 // admin bar
 html #wpadminbar {
   position: fixed;
+}
+
+.has-circle-border {
+  border-radius: 50%;
 }

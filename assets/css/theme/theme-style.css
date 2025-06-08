@@ -66,6 +66,10 @@ html #wpadminbar {
   position: fixed;
 }
 
+.has-circle-border {
+  border-radius: 50%;
+}
+
 .bg-primary {
   background-color: #0f3952 !important;
 }
