@@ -14,7 +14,9 @@ add_action('enqueue_block_assets', 'tb_theme_block_editor_styles');
 function tb_theme_block_editor_styles() {
   wp_enqueue_style(
     'main-theme-style',
-    get_template_directory_uri() . '/assets/css/theme/theme-style.css'
+    get_template_directory_uri() . '/assets/css/theme/theme-style.css',
+    [],
+    TB_THEME_VERSION,
   );
 }
 
