@@ -620,7 +620,7 @@ html #wpadminbar {
   transition: border-color 0.5s;
 }
 .wp-block-navigation-item__content:hover {
-  color: #0f3952;
+  color: #0f3952 !important;
   border-color: #0f3952;
 }
 @media (max-width: 782px) {
@@ -640,7 +640,7 @@ html #wpadminbar {
 @media (min-width: 782px) {
   .home .header.top .wp-block-navigation-item__content:hover,
   .page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content:hover {
-    color: #ffd275;
+    color: #ffd275 !important;
     border-color: #ffd275;
   }
 }
