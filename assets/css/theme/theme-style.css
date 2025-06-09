@@ -608,25 +608,6 @@ html #wpadminbar {
   }
 }
 
-.home .header.top .wp-block-navigation-item__content,
-.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
-  border-bottom: 2px transparent solid;
-}
-.home .header.top .wp-block-navigation-item__content:hover,
-.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content:hover {
-  color: #fff;
-  border-color: #fff;
-  transition: border-color 0.5s;
-}
-@media (min-width: 782px) {
-  .home .header.top .wp-block-navigation-item__content,
-  .page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border-bottom: 0;
-  }
-}
-
 .wp-block-navigation-item__content {
   font-weight: 500;
   border: 0;
@@ -639,12 +620,38 @@ html #wpadminbar {
   transition: border-color 0.5s;
 }
 .wp-block-navigation-item__content:hover {
-  color: #d74058 !important;
-  border-color: #d74058;
+  color: #0f3952 !important;
+  border-color: #0f3952;
 }
-@media (min-width: 782px) {
+@media (max-width: 782px) {
   .wp-block-navigation-item__content {
     padding-bottom: 0;
+  }
+}
+
+.home .header.top .wp-block-navigation-item__content,
+.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
+  border-bottom: 2px transparent solid;
+}
+.home .header.top .wp-block-navigation-item__content:hover,
+.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content:hover {
+  color: #0f3952;
+  border-color: #0f3952;
+  transition: border-color 0.5s;
+}
+@media (min-width: 782px) {
+  .home .header.top .wp-block-navigation-item__content:hover,
+  .page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content:hover {
+    color: #ffd275;
+    border-color: #ffd275;
+  }
+}
+@media (max-width: 782px) {
+  .home .header.top .wp-block-navigation-item__content,
+  .page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
   }
 }
 
