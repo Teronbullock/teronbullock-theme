@@ -8,6 +8,13 @@ cta
   width: 100%;
 
   input,
+  textarea,
+  p,
+  label {
+    font-family: poppins, sans-serif;
+  }
+
+  input,
   textarea {
     margin-bottom: 1rem;
     background-color: inherit;
@@ -20,6 +27,7 @@ cta
     text-decoration: none;
     width: 100%;
     color: var.$color-black;
+    font-size: 18px;
 
     &:focus,
     &::placeholder {
