@@ -5,7 +5,7 @@ add_action('after_setup_theme', 'tb_theme_setup');
 function tb_theme_setup() {
 
   define('TB_THEME_NAME', 'teron-bullock');
-  define('TB_THEME_VERSION', '0.0.15');
+  define('TB_THEME_VERSION', '0.0.16');
   define('TB_TEXT_DOMAIN', 'tb-theme');
 }
 

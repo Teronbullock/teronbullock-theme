@@ -26,7 +26,7 @@
   transition: border-color 0.5s;
 
   &:hover {
-    color: var.$color-primary !important;
+    color: var.$color-primary;
     border-color: var.$color-primary;
   }
 
@@ -41,8 +41,6 @@
     border-bottom: 2px transparent solid;
 
     &:hover {
-      color: var.$color-primary;
-      border-color: var.$color-primary;
       transition: border-color 0.5s;
 
       @include inc.mq-up(md) {
