@@ -535,15 +535,19 @@ html #wpadminbar {
   }
 }
 
-.home .header {
+.home .header,
+.page-template-wp-custom-template-portfolio-pathways .header {
   cursor: default;
   transition: 0.5s;
 }
-.home .header.top {
+.home .header.top,
+.page-template-wp-custom-template-portfolio-pathways .header.top {
   background-color: transparent;
 }
 .home .header.top .wp-block-site-title,
-.home .header.top {
+.home .header.top,
+.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-site-title,
+.page-template-wp-custom-template-portfolio-pathways .header.top {
   color: #fff;
 }
 
@@ -604,16 +608,19 @@ html #wpadminbar {
   }
 }
 
-.home .header.top .wp-block-navigation-item__content {
+.home .header.top .wp-block-navigation-item__content,
+.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
   border-bottom: 2px transparent solid;
 }
-.home .header.top .wp-block-navigation-item__content:hover {
+.home .header.top .wp-block-navigation-item__content:hover,
+.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content:hover {
   color: #fff;
   border-color: #fff;
   transition: border-color 0.5s;
 }
 @media (min-width: 782px) {
-  .home .header.top .wp-block-navigation-item__content {
+  .home .header.top .wp-block-navigation-item__content,
+  .page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 0;
@@ -696,7 +703,8 @@ html #wpadminbar {
 }
 
 @media (max-width: 992px) {
-  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content, .wp-block-navigation__container {
+  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content,
+  .wp-block-navigation__container {
     align-items: center !important;
   }
 }

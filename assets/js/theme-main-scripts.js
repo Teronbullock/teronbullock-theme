@@ -25,7 +25,7 @@ eval("wp.domReady(function () {\n  // create a block object\n  const tbBlockVari
   \****************************************/
 /***/ (() => {
 
-eval("(function($) {\n  $(function() {\n\n    // Get the navbar\n    const header = $('[data-js=\"header\"]');\n    const body = $('body');\n\n    // Get the offset position of the navbar\n    if ( $(body).hasClass('home') ) {\n\n      // scroll listener\n      $(window).on('scroll', function(e) {\n\n        // if scroll is greater than 70px\n        if( window.scrollY >= 70 && window.innerWidth > 769 ) {\n\n          // remove class from header\n          $(header).removeClass('top');\n\n        } else {\n          $(header).addClass('top');\n        }\n      });\n    \n    } else {\n      header.remove('top');\n    }\n\n  });\n})(jQuery);\n\n//# sourceURL=webpack://teronbullock/./src/assets/js/header-script.js?");
+eval("(function ($) {\n  $(function () {\n    // Get the navbar\n    const header = $('[data-js=\"header\"]');\n    const body = $('body');\n\n    // Get the offset position of the navbar\n    if (\n      $(body).hasClass('home') ||\n      $(body).hasClass('page-template-wp-custom-template-portfolio-pathways')\n    ) {\n      // scroll listener\n      $(window).on('scroll', function (e) {\n        // if scroll is greater than 70px\n        if (window.scrollY >= 70 && window.innerWidth > 769) {\n          // remove class from header\n          $(header).removeClass('top');\n        } else {\n          $(header).addClass('top');\n        }\n      });\n    } else {\n      header.remove('top');\n    }\n  });\n})(jQuery);\n\n\n//# sourceURL=webpack://teronbullock/./src/assets/js/header-script.js?");
 
 /***/ }),
 
