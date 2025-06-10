@@ -58,7 +58,7 @@
           <!-- wp:button {"textColor":"jasmine","className":"is-style-outline","style":{"border":{"radius":"3px"},"color":{"background":"#ffffff00"}},"fontFamily":"heading"} -->
           <div class="wp-block-button is-style-outline"><a
               class="wp-block-button__link has-jasmine-color has-text-color has-background has-heading-font-family wp-element-button"
-              href="/software-engineer/#how-i-help" style="border-radius:3px;background-color:#ffffff00">I Need A
+              href="#how-i-help" style="border-radius:3px;background-color:#ffffff00">I Need A
               Dev</a></div>
           <!-- /wp:button -->
         </div>
@@ -320,10 +320,10 @@
   <div class="wp-block-columns alignwide is-style-container">
     <!-- wp:column -->
     <div class="wp-block-column">
-      <!-- wp:query {"queryId":37,"query":{"perPage":"4","pages":"0","offset":0,"postType":"project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"taxQuery":{"project_category":[],"featured_project":[67]},"format":[]}} -->
+      <!-- wp:query {"queryId":37,"query":{"perPage":"4","pages":"0","offset":0,"postType":"project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"taxQuery":{"project_category":[],"featured_project":[55]},"format":[]}} -->
       <div class="wp-block-query">
         <!-- wp:post-template {"layout":{"type":"grid","columnCount":4}} -->
-        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","width":"","scale":"fill","align":"left","style":{"border":{"radius":"8px","width":"1px"},"spacing":{"margin":{"bottom":"1.5rem"}}},"borderColor":"primary"} /-->
+        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","width":"","scale":"fill","align":"left","style":{"border":{"radius":"8px","width":"0px","style":"none"},"spacing":{"margin":{"bottom":"1.5rem"}}}} /-->
 
         <!-- wp:post-title {"textAlign":"left","level":3,"isLink":true,"style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"capitalize","textDecoration":"none"},"spacing":{"margin":{"bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"small"} /-->
         <!-- /wp:post-template -->
@@ -388,19 +388,20 @@
           style="margin-bottom:1.5rem;font-style:normal;font-weight:500">About Me</h2>
         <!-- /wp:heading -->
 
-        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"medium","fontFamily":"heading"} -->
-        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:1rem">Hey, I’m Teron, a full-stack
+        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"fontSize":"medium","fontFamily":"heading"} -->
+        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--70)">
+          Hey, I’m Teron, a full-stack
           developer who solves problems with clean code, thoughtful design, and a mindset for growth.</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}},"fontSize":"medium","fontFamily":"heading"} -->
-        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--40)">
+        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}},"fontSize":"medium","fontFamily":"heading"} -->
+        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--60)">
           Before tech, I worked in healthcare. That taught me two things I bring to every project: empathy for real
           people using what I build, and a deep sense of responsibility for doing things right.</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}},"fontSize":"medium","fontFamily":"heading"} -->
-        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--40)">
+        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}},"fontSize":"medium","fontFamily":"heading"} -->
+        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--60)">
           When I’m not coding, I’m playing strategy games, digging into how things work, or sharing what I’ve learned
           with others.</p>
         <!-- /wp:paragraph -->
@@ -437,7 +438,7 @@
     <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
     <div class="wp-block-group alignwide">
       <!-- wp:shortcode -->
-      [sp_testimonial id="1438"]
+      [sp_testimonial id="1240"]
       <!-- /wp:shortcode -->
     </div>
     <!-- /wp:group -->

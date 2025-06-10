@@ -21,7 +21,8 @@
       <div class="wp-block-column" style="flex-basis:45%">
         <!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} -->
         <h2 class="wp-block-heading has-white-color has-text-color has-link-color has-large-font-size">Full Stack
-          <br>Software Engineer</h2>
+          <br>Software Engineer
+        </h2>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"1rem"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"medium","fontFamily":"heading"} -->
@@ -50,14 +51,15 @@
           <!-- wp:button {"textColor":"jasmine","className":"is-style-outline","style":{"border":{"radius":"3px"},"color":{"background":"#ffffff00"}},"fontFamily":"heading"} -->
           <div class="wp-block-button is-style-outline"><a
               class="wp-block-button__link has-jasmine-color has-text-color has-background has-heading-font-family wp-element-button"
-              href="/software-engineer/#how-i-help" style="border-radius:3px;background-color:#ffffff00">I Need A
+              href="#how-i-help" style="border-radius:3px;background-color:#ffffff00">I Need A
               Site</a></div>
           <!-- /wp:button -->
 
           <!-- wp:button {"textColor":"jasmine","className":"is-style-outline","style":{"border":{"radius":"3px"},"color":{"background":"#ffffff00"}},"fontFamily":"heading"} -->
           <div class="wp-block-button is-style-outline"><a
               class="wp-block-button__link has-jasmine-color has-text-color has-background has-heading-font-family wp-element-button"
-              href="#how-i-help" style="border-radius:3px;background-color:#ffffff00">I Need A Dev</a></div>
+              href="/software-engineer/#how-i-help" style="border-radius:3px;background-color:#ffffff00">I Need A
+              Dev</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -85,12 +87,11 @@
           <div class="wp-block-columns">
             <!-- wp:column {"width":"90%"} -->
             <div class="wp-block-column" style="flex-basis:90%">
-              <!-- wp:image {"id":1418,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px"}}} -->
+              <!-- wp:image {"id":1296,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px"}}} -->
               <figure class="wp-block-image size-full has-custom-border"><img
-                  src="http://teronbullock.local/wp-content/uploads/2025/06/man-in-plaid-holds-a-laptop-and-cellphone-crop.png"
-                  alt="A man in plaid holds a laptop and a cellphone.
-
-Photo by Avelino Calvar Martinez from Burst" class="wp-image-1418" style="border-radius:4px" /></figure>
+                  src="https://teronbullock.com/wp-content/uploads/2025/06/man-in-plaid-holds-a-laptop-and-cellphone-crop.png"
+                  alt="A man in plaid holds a laptop and a cellphone. Photo by Avelino Calvar Martinez from Burst"
+                  class="wp-image-1296" style="border-radius:4px" /></figure>
               <!-- /wp:image -->
             </div>
             <!-- /wp:column -->
@@ -175,11 +176,9 @@ Photo by Avelino Calvar Martinez from Burst" class="wp-image-1418" style="border
           <div class="wp-block-group">
             <!-- wp:image {"id":1194,"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px"}}} -->
             <figure class="wp-block-image size-full has-custom-border"><img
-                src="http://teronbullock.local/wp-content/uploads/2025/06/surface-4_-vuSefJ4-unsplash.jpg" alt="A woman working on a laptop.
-
-photo by unsplash surface" class="wp-image-1194" style="border-radius:4px" />
-              <figcaption class="wp-element-caption"> </figcaption>
-            </figure>
+                src="https://teronbullock.com/wp-content/uploads/2025/06/surface-4_-vuSefJ4-unsplash.jpg"
+                alt="A woman working on a laptop. photo by unsplash surface" class="wp-image-1194"
+                style="border-radius:4px" /></figure>
             <!-- /wp:image -->
           </div>
           <!-- /wp:group -->
@@ -207,9 +206,9 @@ photo by unsplash surface" class="wp-image-1194" style="border-radius:4px" />
             <div class="wp-block-column" style="flex-basis:90%">
               <!-- wp:image {"id":1198,"width":"788px","height":"auto","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"4px"}}} -->
               <figure class="wp-block-image size-full is-resized has-custom-border"><img
-                  src="http://teronbullock.local/wp-content/uploads/2025/06/pexels-fauxels-3184430.jpg" alt="Photo Of People Doing Fist Bump.
-
-Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;width:788px;height:auto" /></figure>
+                  src="https://teronbullock.com/wp-content/uploads/2025/06/pexels-fauxels-3184430.jpg"
+                  alt="Photo Of People Doing Fist Bump. Photo by fauxels from pexels" class="wp-image-1198"
+                  style="border-radius:4px;width:788px;height:auto" /></figure>
               <!-- /wp:image -->
             </div>
             <!-- /wp:column -->
@@ -301,8 +300,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
       style="border-top-width:1px;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:1.5rem;padding-right:0px;padding-bottom:1.5rem;padding-left:0px">
       <!-- wp:column {"verticalAlignment":"top"} -->
       <div class="wp-block-column is-vertically-aligned-top">
-        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"}},"fontSize":"x-large"} -->
-        <h2 class="wp-block-heading has-x-large-font-size" style="font-style:normal;font-weight:100">01</h2>
+        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"x-large"} -->
+        <h2 class="wp-block-heading has-primary-color has-text-color has-link-color has-x-large-font-size"
+          style="font-style:normal;font-weight:100">01</h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"style":{"spacing":{"padding":{"right":"1em","left":"1em"}}},"layout":{"type":"constrained","justifyContent":"left","contentSize":"80%","wideSize":"80%"}} -->
@@ -313,8 +313,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
 
       <!-- wp:column -->
       <div class="wp-block-column">
-        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"small"} -->
-        <h3 class="wp-block-heading has-small-font-size" style="margin-bottom:1rem"><strong>Discovery Call</strong></h3>
+        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"small"} -->
+        <h3 class="wp-block-heading has-primary-color has-text-color has-link-color has-small-font-size"
+          style="margin-bottom:1rem"><strong>Discovery Call</strong></h3>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"fontFamily":"heading"} -->
@@ -331,8 +332,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
       style="border-top-style:none;border-top-width:0px;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:1.5rem;padding-right:0px;padding-bottom:1.5rem;padding-left:0px">
       <!-- wp:column {"verticalAlignment":"top"} -->
       <div class="wp-block-column is-vertically-aligned-top">
-        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"}},"fontSize":"x-large"} -->
-        <h2 class="wp-block-heading has-x-large-font-size" style="font-style:normal;font-weight:100">02</h2>
+        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"x-large"} -->
+        <h2 class="wp-block-heading has-primary-color has-text-color has-link-color has-x-large-font-size"
+          style="font-style:normal;font-weight:100">02</h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"style":{"spacing":{"padding":{"right":"1em","left":"1em"}}},"layout":{"type":"constrained","justifyContent":"left","contentSize":"80%","wideSize":"80%"}} -->
@@ -343,8 +345,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
 
       <!-- wp:column -->
       <div class="wp-block-column">
-        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"small"} -->
-        <h3 class="wp-block-heading has-small-font-size" style="margin-bottom:1rem"><strong>Custom Proposal</strong>
+        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"small"} -->
+        <h3 class="wp-block-heading has-primary-color has-text-color has-link-color has-small-font-size"
+          style="margin-bottom:1rem"><strong>Custom Proposal</strong>
         </h3>
         <!-- /wp:heading -->
 
@@ -362,8 +365,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
       style="border-top-style:none;border-top-width:0px;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:1.5rem;padding-right:0px;padding-bottom:1.5rem;padding-left:0px">
       <!-- wp:column {"verticalAlignment":"top"} -->
       <div class="wp-block-column is-vertically-aligned-top">
-        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"}},"fontSize":"x-large"} -->
-        <h2 class="wp-block-heading has-x-large-font-size" style="font-style:normal;font-weight:100">03</h2>
+        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"x-large"} -->
+        <h2 class="wp-block-heading has-primary-color has-text-color has-link-color has-x-large-font-size"
+          style="font-style:normal;font-weight:100">03</h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"style":{"spacing":{"padding":{"right":"1em","left":"1em"}}},"layout":{"type":"constrained","justifyContent":"left","contentSize":"80%","wideSize":"80%"}} -->
@@ -374,8 +378,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
 
       <!-- wp:column -->
       <div class="wp-block-column">
-        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"small"} -->
-        <h3 class="wp-block-heading has-small-font-size" style="margin-bottom:1rem"><strong>Build &amp; Updates</strong>
+        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"small"} -->
+        <h3 class="wp-block-heading has-primary-color has-text-color has-link-color has-small-font-size"
+          style="margin-bottom:1rem"><strong>Build &amp; Updates</strong>
         </h3>
         <!-- /wp:heading -->
 
@@ -393,8 +398,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
       style="border-top-style:none;border-top-width:0px;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:1.5rem;padding-right:0px;padding-bottom:1.5rem;padding-left:0px">
       <!-- wp:column {"verticalAlignment":"top"} -->
       <div class="wp-block-column is-vertically-aligned-top">
-        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"}},"fontSize":"x-large"} -->
-        <h2 class="wp-block-heading has-x-large-font-size" style="font-style:normal;font-weight:100">04</h2>
+        <!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"x-large"} -->
+        <h2 class="wp-block-heading has-primary-color has-text-color has-link-color has-x-large-font-size"
+          style="font-style:normal;font-weight:100">04</h2>
         <!-- /wp:heading -->
 
         <!-- wp:group {"style":{"spacing":{"padding":{"right":"1em","left":"1em"}}},"layout":{"type":"constrained","justifyContent":"left","contentSize":"80%","wideSize":"80%"}} -->
@@ -405,8 +411,9 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
 
       <!-- wp:column -->
       <div class="wp-block-column">
-        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"small"} -->
-        <h3 class="wp-block-heading has-small-font-size" style="margin-bottom:1rem"><strong>Launch &amp; Care</strong>
+        <!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"1rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"small"} -->
+        <h3 class="wp-block-heading has-primary-color has-text-color has-link-color has-small-font-size"
+          style="margin-bottom:1rem"><strong>Launch &amp; Care</strong>
         </h3>
         <!-- /wp:heading -->
 
@@ -437,10 +444,10 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
   <div class="wp-block-columns alignwide is-style-container">
     <!-- wp:column -->
     <div class="wp-block-column">
-      <!-- wp:query {"queryId":37,"query":{"perPage":"4","pages":"0","offset":0,"postType":"project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"taxQuery":{"project_category":[],"featured_project":[69]},"format":[]}} -->
+      <!-- wp:query {"queryId":37,"query":{"perPage":"4","pages":"0","offset":0,"postType":"project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"taxQuery":{"project_category":[],"featured_project":[56]},"format":[]}} -->
       <div class="wp-block-query">
         <!-- wp:post-template {"layout":{"type":"grid","columnCount":4}} -->
-        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","width":"","scale":"fill","align":"left","style":{"border":{"radius":"8px","width":"1px"},"spacing":{"margin":{"bottom":"1.5rem"}}},"borderColor":"primary"} /-->
+        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","width":"","scale":"fill","align":"left","style":{"spacing":{"margin":{"bottom":"1.5rem"}},"border":{"radius":"8px"}}} /-->
 
         <!-- wp:post-title {"textAlign":"left","level":3,"isLink":true,"style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"capitalize","textDecoration":"none"},"spacing":{"margin":{"bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"small"} /-->
         <!-- /wp:post-template -->
@@ -505,19 +512,22 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
           style="margin-bottom:1.5rem;font-style:normal;font-weight:500">About Me</h2>
         <!-- /wp:heading -->
 
-        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"medium","fontFamily":"heading"} -->
-        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:1rem">I build websites that help
+        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}},"fontSize":"medium","fontFamily":"heading"} -->
+        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--60)">I
+          build websites that help
           small businesses grow.</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"1.5rem"}}},"fontSize":"medium","fontFamily":"heading"} -->
-        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:1.5rem">My approach is simple:
+        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}},"fontSize":"medium","fontFamily":"heading"} -->
+        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--60)">My
+          approach is simple:
           listen to what you need, create something that works beautifully, and make sure you're never left wondering
           what's happening with your project. </p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"1.5rem"}}},"fontSize":"medium","fontFamily":"heading"} -->
-        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:1.5rem">I specialize in turning
+        <!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}},"fontSize":"medium","fontFamily":"heading"} -->
+        <p class="has-heading-font-family has-medium-font-size" style="margin-bottom:var(--wp--preset--spacing--60)">I
+          specialize in turning
           complex technical stuff into websites that your customers love using.</p>
         <!-- /wp:paragraph -->
 
@@ -554,7 +564,7 @@ Photo by fauxels from pexels" class="wp-image-1198" style="border-radius:4px;wid
     <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
     <div class="wp-block-group alignwide">
       <!-- wp:shortcode -->
-      [sp_testimonial id="1438"]
+      [sp_testimonial id="1240"]
       <!-- /wp:shortcode -->
     </div>
     <!-- /wp:group -->
