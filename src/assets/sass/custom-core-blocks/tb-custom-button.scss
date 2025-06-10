@@ -59,7 +59,7 @@
     }
   }
 
-  @if $color == 'white' {
+  @if $color == 'white' or $color == 'jasmine' {
     .wp-block-button.is-style-outline
       .wp-block-button__link.has-#{$color}-color {
       &:hover {

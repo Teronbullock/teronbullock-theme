@@ -72,6 +72,10 @@
   transition: background-color 0.25s, color 0.6s;
 }
 
+.wp-block-button.is-style-outline .wp-block-button__link.has-jasmine-color:hover {
+  color: #141515 !important;
+}
+
 .wp-block-button.is-style-outline .wp-block-button__link.has-red-color:hover {
   background-color: #d74058 !important;
   color: #fff !important;
