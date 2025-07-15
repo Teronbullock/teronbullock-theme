@@ -11,19 +11,11 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { 
-  useBlockProps,
-  BlockControls
-} from '@wordpress/block-editor'; 
+import { useBlockProps, BlockControls } from '@wordpress/block-editor';
 
-import { 
-  Toolbar,
-  ToolbarDropdownMenu
-} from '@wordpress/components';
+import { Toolbar, ToolbarDropdownMenu } from '@wordpress/components';
 
-import { 
-  useRef
-} from '@wordpress/element';
+import { useRef } from '@wordpress/element';
 
 import { useSelect } from '@wordpress/data';
 import { useEntityRecords, useEntityRecord } from '@wordpress/core-data';
@@ -38,122 +30,93 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit({attributes, setAttributes, context }) {
-  const { postId, postType } = context;
+export default function Edit({ attributes, setAttributes, context }) {
+  const { postId, postType, queryId } = context;
   const postTermsIds = useRef({});
   const { categoryType, displayType } = attributes;
   let termNames = '';
   let additionalClasses = '';
-  
-  
-  // get taxonomy slug
-  const postTaxonomy = useSelect( ( select ) => {
-    if (!postId || !postType) {
-      return null; 
-    }
 
-    const taxonomyInfo = select('core').getTaxonomies({ type: postType });
+  const { record: post, isLoading: isPostLoaded } = useEntityRecord(
+    'postType',
+    postType,
+    postId
+  );
 
-    if (taxonomyInfo) {
-      return taxonomyInfo[0].slug;
-    } 
+  const categoryId = post?.categories?.[0];
+  const { record: category, isLoading: isCategoryLoaded } = useEntityRecord(
+    'taxonomy',
+    'category',
+    categoryId
+  );
 
-    return null;
-  }, [postId]);    
-
-  // get taxonomy terms Ids
-  const { record: taxonomyTerms, hasResolved: taxonomyTermsResolved } = useEntityRecord( 'postType', postType, postId );
-
-  if (taxonomyTerms && taxonomyTermsResolved && postTaxonomy) {
-    postTermsIds.current = taxonomyTerms[postTaxonomy];
-  }
-
-  const { records: termRecords, hasResolved: termRecordsResolved } = useEntityRecords( 'taxonomy', postTaxonomy );
-
-  if (termRecords && termRecordsResolved) {
-    termRecords.forEach( term => {
-      if (postTermsIds.current.includes(term.id)) {
-        if (termNames === '') {
-          termNames = term.name;
-        } else {
-          termNames += ', ' + term.name;
-        }
-      }
-    });
-  }
+  const categoryName = category?.name;
 
   // add additional classes based on display type
-  additionalClasses = {
-    'block': '',
-    'inline': 'inline',
-    'inline-block': 'inline-block'
-  }[displayType] || '';
-  
+  additionalClasses =
+    {
+      block: '',
+      inline: 'inline',
+      'inline-block': 'inline-block',
+    }[displayType] || '';
 
   const blockProps = useBlockProps({
     className: additionalClasses,
   });
 
-	return (
+  return (
     <>
       <BlockControls>
         <Toolbar label='Select Category Type'>
-          <ToolbarDropdownMenu 
+          <ToolbarDropdownMenu
             label='Select Category Type'
-            controls={[ 
+            controls={[
               {
                 icon: 'text-page',
                 title: 'Taxonomy',
-                onClick: () => setAttributes({categoryType: 'taxonomy'}),
-                isActive: attributes.categoryType === 'taxonomy'
+                onClick: () => setAttributes({ categoryType: 'taxonomy' }),
+                isActive: attributes.categoryType === 'taxonomy',
               },
               {
                 icon: 'text-page',
                 title: 'Text',
-                onClick: () => setAttributes({categoryType: 'text'}),
-                isActive: attributes.categoryType === 'text'
-              }
+                onClick: () => setAttributes({ categoryType: 'text' }),
+                isActive: attributes.categoryType === 'text',
+              },
             ]}
           />
         </Toolbar>
         <Toolbar label='Select Display Type'>
-          <ToolbarDropdownMenu 
+          <ToolbarDropdownMenu
             label='Select Display Type'
-            controls={[ 
+            controls={[
               {
                 icon: 'visibility',
                 title: 'Block',
-                onClick: () => setAttributes({displayType: 'block'}),
-                isActive: attributes.displayType === 'block'
+                onClick: () => setAttributes({ displayType: 'block' }),
+                isActive: attributes.displayType === 'block',
               },
               {
                 icon: 'visibility',
                 title: 'Inline',
-                onClick: () => setAttributes({displayType: 'inline'}),
-                isActive: attributes.displayType === 'inline'
+                onClick: () => setAttributes({ displayType: 'inline' }),
+                isActive: attributes.displayType === 'inline',
               },
               {
                 icon: 'visibility',
                 title: 'Inline Block',
-                onClick: () => setAttributes({displayType: 'inline-block'}),
-                isActive: attributes.displayType === 'inline-block'
-              }
+                onClick: () => setAttributes({ displayType: 'inline-block' }),
+                isActive: attributes.displayType === 'inline-block',
+              },
             ]}
           />
         </Toolbar>
       </BlockControls>
-      { 
-        categoryType === 'taxonomy' ? (
-          <p { ...blockProps }>
-            { termNames || 'No Category'}
-          </p>
-        ) : categoryType === 'text' ? (
-          <p { ...blockProps } >
-            Frontend Text
-          </p>
-        ) : null
-      } 
+      {categoryType === 'taxonomy' ? (
+        <p {...blockProps}>{categoryName || 'No Category'}</p>
+      ) : categoryType === 'text' ? (
+        <p {...blockProps}>Frontend Text</p>
+      ) : null}
     </>
-	);
+  );
 }
-

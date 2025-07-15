@@ -52,92 +52,119 @@ function Edit({
   setAttributes
 }) {
   const defaultBlockTemplate = [['core/group', {
-    "metadata": {
-      "name": "Post Item"
+    metadata: {
+      name: 'Query Container'
     },
-    "className": "tb-post-item",
-    "style": {
-      "border": {
-        "width": "1px",
-        "color": "#0f3952",
-        "radius": "10px"
+    className: 'tb-query-container is-style-container',
+    layout: {
+      type: 'constrained',
+      contentSize: '900px',
+      wideSize: '1320px'
+    }
+  }, [['core/query', {}, [['core/post-template', {}, [['core/group', {
+    metadata: {
+      name: 'Post Item'
+    },
+    className: 'tb-post-item',
+    style: {
+      border: {
+        width: '1px',
+        color: '#0f3952',
+        radius: '10px'
       },
-      "spacing": {
-        "padding": {
-          "top": "2rem",
-          "bottom": "2rem",
-          "left": "2rem",
-          "right": "2rem"
+      spacing: {
+        padding: {
+          top: '2rem',
+          bottom: '2rem',
+          left: '2rem',
+          right: '2rem'
         },
-        "margin": {
-          "bottom": "2rem"
+        margin: {
+          bottom: '2rem'
         }
       }
     },
-    "layout": {
-      "type": "default"
+    layout: {
+      type: 'default'
     }
   }, [['core/post-title', {
-    "align": "wide",
-    "style": {
-      "spacing": {
-        "margin": {
-          "right": "0",
-          "left": "0",
-          "top": "0",
-          "bottom": "1rem"
+    align: 'wide',
+    style: {
+      spacing: {
+        margin: {
+          right: '0',
+          left: '0',
+          top: '0',
+          bottom: '1rem'
         }
       },
-      "typography": {
-        "lineHeight": "1.33"
+      typography: {
+        lineHeight: '1.33'
       },
-      "elements": {
-        "link": {
-          "color": {
-            "text": "var:preset|color|secondary"
+      elements: {
+        link: {
+          color: {
+            text: 'var:preset|color|secondary'
           }
         }
       }
     },
-    "textColor": "secondary",
-    "fontSize": "medium"
+    textColor: 'secondary',
+    fontSize: 'medium'
   }], ['core/group', {
-    "className": "is-style-tb-theme-flex",
-    "style": {
-      "spacing": {
-        "margin": {
-          "bottom": "1rem"
+    metadata: {
+      name: 'Post Meta'
+    },
+    className: 'tb-post-meta is-style-tb-theme-flex',
+    style: {
+      spacing: {
+        margin: {
+          bottom: '1rem'
         }
       }
     },
-    "layout": {
-      "type": "default"
+    layout: {
+      type: 'default'
     }
   }, [['tb-theme/category-display-block', {
-    "style": {
-      "elements": {
-        "link": {
-          "color": {
-            "text": "var:preset|color|secondary"
+    style: {
+      elements: {
+        link: {
+          color: {
+            text: 'var:preset|color|primary'
           }
         }
-      }
-    },
-    "backgroundColor": "white",
-    "textColor": "secondary"
-  }], ['core/post-date', {
-    "style": {
-      "spacing": {
-        "margin": {
-          "left": "0",
-          "right": "1.5rem"
+      },
+      spacing: {
+        padding: {
+          all: 'var:preset|spacing|20'
+        },
+        margin: {
+          right: 'var:preset|spacing|40'
         }
       }
     },
-    "dateFormat": "F j, Y"
+    fontSize: 'small',
+    backgroundColor: 'primary',
+    textColor: 'white'
+  }], ['core/post-date', {
+    style: {
+      spacing: {
+        margin: {
+          left: 'var:preset|spacing|20',
+          right: '0'
+        },
+        padding: {
+          top: 'var:preset|spacing|20',
+          bottom: 'var:preset|spacing|20'
+        }
+      }
+    },
+    fontSize: 'small',
+    dateFormat: 'F j, Y'
   }]]], ['core/post-excerpt', {
-    "fontSize": "medium"
-  }]]]];
+    fontSize: 'medium'
+  }]]]]], ['core/query-pagination', {}, []], ['core/query-no-results', {}, []]]]]]];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.BlockControls, {

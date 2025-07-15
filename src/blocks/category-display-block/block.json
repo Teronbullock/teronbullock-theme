@@ -1,15 +1,15 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
-	"name": "tb-theme/category-display-block",
-	"version": "0.0.1",
-	"title": "TB: Category Display Block",
-	"category": "theme",
-	"icon": "index-card",
-	"description": "Displays the category name on archive pages.",
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tb-theme/category-display-block",
+  "version": "0.0.1",
+  "title": "TB: Category Display Block",
+  "category": "theme",
+  "icon": "index-card",
+  "description": "Displays the category name on archive pages.",
   "keywords": ["TB Theme", "category"],
-	"example": {},
-  "usesContext": [ "postId", "postType", "queryId"],
+  "example": {},
+  "usesContext": ["postId", "postType", "queryId"],
   "attributes": {
     "categoryType": {
       "type": "string",
@@ -22,8 +22,8 @@
       "default": "block"
     }
   },
-	"supports": {
-		"html": false,
+  "supports": {
+    "html": false,
     "align": true,
     "color": {
       "background": true,
@@ -42,9 +42,9 @@
     },
     "styles": true
   },
-	"textdomain": "tb-theme",
-	"editorScript": "file:./index.js",
-	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css",
-	"render": "file:./render.php"
+  "textdomain": "tb-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
 }

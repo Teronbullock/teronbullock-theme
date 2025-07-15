@@ -63,7 +63,8 @@ function Edit({
 }) {
   const {
     postId,
-    postType
+    postType,
+    queryId
   } = context;
   const postTermsIds = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.useRef)({});
   const {
@@ -72,49 +73,21 @@ function Edit({
   } = attributes;
   let termNames = '';
   let additionalClasses = '';
-
-  // get taxonomy slug
-  const postTaxonomy = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_4__.useSelect)(select => {
-    if (!postId || !postType) {
-      return null;
-    }
-    const taxonomyInfo = select('core').getTaxonomies({
-      type: postType
-    });
-    if (taxonomyInfo) {
-      return taxonomyInfo[0].slug;
-    }
-    return null;
-  }, [postId]);
-
-  // get taxonomy terms Ids
   const {
-    record: taxonomyTerms,
-    hasResolved: taxonomyTermsResolved
+    record: post,
+    isLoading: isPostLoaded
   } = (0,_wordpress_core_data__WEBPACK_IMPORTED_MODULE_5__.useEntityRecord)('postType', postType, postId);
-  if (taxonomyTerms && taxonomyTermsResolved && postTaxonomy) {
-    postTermsIds.current = taxonomyTerms[postTaxonomy];
-  }
+  const categoryId = post?.categories?.[0];
   const {
-    records: termRecords,
-    hasResolved: termRecordsResolved
-  } = (0,_wordpress_core_data__WEBPACK_IMPORTED_MODULE_5__.useEntityRecords)('taxonomy', postTaxonomy);
-  if (termRecords && termRecordsResolved) {
-    termRecords.forEach(term => {
-      if (postTermsIds.current.includes(term.id)) {
-        if (termNames === '') {
-          termNames = term.name;
-        } else {
-          termNames += ', ' + term.name;
-        }
-      }
-    });
-  }
+    record: category,
+    isLoading: isCategoryLoaded
+  } = (0,_wordpress_core_data__WEBPACK_IMPORTED_MODULE_5__.useEntityRecord)('taxonomy', 'category', categoryId);
+  const categoryName = category?.name;
 
   // add additional classes based on display type
   additionalClasses = {
-    'block': '',
-    'inline': 'inline',
+    block: '',
+    inline: 'inline',
     'inline-block': 'inline-block'
   }[displayType] || '';
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
@@ -172,7 +145,7 @@ function Edit({
       })]
     }), categoryType === 'taxonomy' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
       ...blockProps,
-      children: termNames || 'No Category'
+      children: categoryName || 'No Category'
     }) : categoryType === 'text' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
       ...blockProps,
       children: "Frontend Text"
