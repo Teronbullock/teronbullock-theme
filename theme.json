@@ -303,6 +303,11 @@
           "fontFamily": "var(--wp--preset--font-family--main)",
           "fontSize": "var(--wp--preset--font-size--medium)",
           "lineHeight": "1.4"
+        },
+        "spacing": {
+          "margin": {
+            "bottom": "medium"
+          }
         }
       }
     }
