@@ -306,7 +306,7 @@
         },
         "spacing": {
           "margin": {
-            "bottom": "medium"
+            "bottom": "var:preset|spacing|50"
           }
         }
       }
