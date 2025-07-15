@@ -302,7 +302,7 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--main)",
           "fontSize": "var(--wp--preset--font-size--medium)",
-          "lineHeight": "1.4"
+          "lineHeight": "1.5"
         },
         "spacing": {
           "margin": {
