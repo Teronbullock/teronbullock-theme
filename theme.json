@@ -100,7 +100,7 @@
         {
           "fontFamily": "Poppins, Helvetica, Arial, Lucida, sans-serif",
           "name": "Poppins",
-          "slug": "heading",
+          "slug": "main",
           "fontFace": [
             {
               "fontFamily": "Poppins",
@@ -263,22 +263,22 @@
       },
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--heading)"
+          "fontFamily": "var(--wp--preset--font-family--main)"
         }
       }
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--body)"
+      "fontFamily": "var(--wp--preset--font-family--main)"
     },
     "blocks": {
       "core/site-title": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--heading)"
+          "fontFamily": "var(--wp--preset--font-family--main)"
         }
       },
       "core/navigation": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--heading)"
+          "fontFamily": "var(--wp--preset--font-family--main)"
         }
       },
       "tb-theme/category-display-block": {
@@ -300,7 +300,7 @@
       },
       "core/paragraph": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--body)",
+          "fontFamily": "var(--wp--preset--font-family--main)",
           "fontSize": "var(--wp--preset--font-size--small)",
           "lineHeight": "1.4"
         }
