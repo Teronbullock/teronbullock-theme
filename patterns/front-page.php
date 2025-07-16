@@ -51,14 +51,17 @@
           <!-- wp:button {"textColor":"jasmine","className":"is-style-outline","style":{"border":{"radius":"4px"},"color":{"background":"#ffffff00"}},"fontFamily":"heading"} -->
           <div class="wp-block-button is-style-outline"><a
               class="wp-block-button__link has-jasmine-color has-text-color has-background has-heading-font-family wp-element-button"
-              href="/custom-web-solutions//#how-i-help" style="border-radius:4px;background-color:#ffffff00">I Need A
+              href="/custom-web-solutions//#how-i-help" style="border-radius:4px;background-color:#ffffff00"
+              data-ga-category="button" data-ga-label="HomePage: I Need A Site Button">I
+              Need A
               Site</a></div>
           <!-- /wp:button -->
 
           <!-- wp:button {"textColor":"jasmine","className":"is-style-outline","style":{"border":{"radius":"4px"},"color":{"background":"#ffffff00"}},"fontFamily":"heading"} -->
           <div class="wp-block-button is-style-outline"><a
               class="wp-block-button__link has-jasmine-color has-text-color has-background has-heading-font-family wp-element-button"
-              href="/software-engineer/#how-i-help" style="border-radius:4px;background-color:#ffffff00">I Need A
+              href="/software-engineer/#how-i-help" style="border-radius:4px;background-color:#ffffff00"
+              data-ga-category="button" data-ga-label="HomePage: I Need A Dev Button">
               dev</a></div>
           <!-- /wp:button -->
         </div>

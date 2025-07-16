@@ -59,15 +59,28 @@ function tb_theme_enqueue_custom_core_block_assets() {
 
 
 // enqueue js into the editor.
-// add_action('init', 'tb_theme_scripts');
 add_action('enqueue_block_assets', 'tb_theme_scripts');
 function tb_theme_scripts() {
   wp_enqueue_script(
     'theme-main-script',
-    get_template_directory_uri() . '/assets/js/theme-main-scripts.js',
+    get_template_directory_uri() . '/assets/js/themeMainScripts.js',
     array('jquery', 'wp-blocks', 'wp-element', 'wp-editor')
   );
 }
+
+
+// enqueue GTM js into the editor.
+add_action('enqueue_block_assets', 'tb_theme_gtm_scripts');
+function tb_theme_gtm_scripts() {
+  if (!is_admin() && is_front_page()) {
+    wp_enqueue_script(
+      'theme-GTM-script',
+      get_template_directory_uri() . '/assets/js/themeGTMScripts.js',
+      array('jquery', 'wp-blocks', 'wp-element', 'wp-editor')
+    );
+  }
+}
+
 
 // allow .vcf files to be uploaded to the media library
 add_filter('upload_mimes', 'tb_theme_mime_types');
