@@ -8,7 +8,11 @@ $post_id = get_the_ID();
 $post_link_type = $attributes['postLinkType'];
 $post_link = get_permalink();
 
-$external_link = get_field('post_link', $post_id);
+if (function_exists('get_field')) {
+  $external_link = get_field('post_link', $post_id);
+} else {
+  $external_link = '';
+}
 
 // Start output buffering
 ob_start();

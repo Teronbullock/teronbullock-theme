@@ -1,16 +1,15 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "tb-theme/query-card",
+  "name": "tb-theme/query-post-item",
   "version": "0.0.2",
-  "title": "TB: Query Card",
+  "title": "TB: Query post-item",
   "category": "theme",
   "icon": "index-card",
   "description": "Displaying a card that has a link to a post or page.",
-  "keywords": [
-    "TB Theme"
-  ],
+  "keywords": ["TB Theme"],
   "example": {},
+  "parent": ["tb-theme/tb-query"],
   "attributes": {
     "align": {
       "type": "string",
