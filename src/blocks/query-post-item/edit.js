@@ -147,9 +147,13 @@ export default function Edit({ attributes, setAttributes }) {
                       bottom: 'var:preset|spacing|20',
                     },
                   },
+                  typography: {
+                    lineHeight: '1.5',
+                  },
                 },
                 fontSize: 'small',
                 dateFormat: 'F j, Y',
+                textColor: 'black',
               },
             ],
           ],

@@ -7,9 +7,9 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-tb-theme-query-card,
-:root .wp-block-tb-theme-query-card {
-  text-decoration: none;
+.wp-block-tb-theme-query-post-item,
+:root .wp-block-tb-theme-query-post-item {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

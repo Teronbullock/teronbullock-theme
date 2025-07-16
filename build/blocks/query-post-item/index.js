@@ -148,10 +148,14 @@ function Edit({
           top: 'var:preset|spacing|20',
           bottom: 'var:preset|spacing|20'
         }
+      },
+      typography: {
+        lineHeight: '1.5'
       }
     },
     fontSize: 'small',
-    dateFormat: 'F j, Y'
+    dateFormat: 'F j, Y',
+    textColor: 'black'
   }]]]]]];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(),
