@@ -4,8 +4,12 @@ const body = document.querySelector('body');
 
 // Get the offset position of the navbar
 if (
-  body.classList.contains('home') ||
-  body.classList.contains('page-template-wp-custom-template-portfolio-pathways')
+  header &&
+  body &&
+  (body.classList.contains('home') ||
+    body.classList.contains(
+      'page-template-wp-custom-template-portfolio-pathways'
+    ))
 ) {
   // scroll listener
   window.addEventListener('scroll', e => {
@@ -16,7 +20,6 @@ if (
     } else {
       header.classList.add('top');
     }
-    console.log('window', header.classList);
   });
 } else {
   header.classList.remove('top');
