@@ -31,6 +31,7 @@ function tb_theme_enqueue_custom_core_block_assets() {
     'core/heading',
     'core/query',
     'core/paragraph',
+    'core/video',
   );
 
 
