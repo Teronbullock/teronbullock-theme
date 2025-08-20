@@ -1,26 +1,22 @@
-(function ($) {
-  $(function () {
-    // Get the navbar
-    const header = $('[data-js="header"]');
-    const body = $('body');
+// Get the navbar
+const header = document.querySelector('[data-js="header"]');
+const body = document.querySelector('body');
 
-    // Get the offset position of the navbar
-    if (
-      $(body).hasClass('home') ||
-      $(body).hasClass('page-template-wp-custom-template-portfolio-pathways')
-    ) {
-      // scroll listener
-      $(window).on('scroll', function (e) {
-        // if scroll is greater than 70px
-        if (window.scrollY >= 70 && window.innerWidth > 769) {
-          // remove class from header
-          $(header).removeClass('top');
-        } else {
-          $(header).addClass('top');
-        }
-      });
+// Get the offset position of the navbar
+if (
+  body.classList.contains('home') ||
+  body.classList.contains('page-template-wp-custom-template-portfolio-pathways')
+) {
+  // scroll listener
+  window.addEventListener('scroll', e => {
+    // if scroll is greater than 70px
+    if (window.scrollY >= 70 && window.innerWidth > 769) {
+      // remove class from header
+      header.classList.remove('top');
     } else {
-      header.remove('top');
+      header.classList.add('top');
     }
   });
-})(jQuery);
+} else {
+  header.classList.remove('top');
+}
