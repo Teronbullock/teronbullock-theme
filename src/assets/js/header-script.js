@@ -16,6 +16,7 @@ if (
     } else {
       header.classList.add('top');
     }
+    console.log('window', header.classList);
   });
 } else {
   header.classList.remove('top');
