@@ -9,3 +9,10 @@
 :root .wp-block-tb-theme-query-post-item {
   text-decoration: none !important;
 }
+
+.tb-post-item:hover {
+  border-color: #0f3952 !important;
+  box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 43%);
+  -webkit-box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 43%);
+  -moz-box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 43%);
+}

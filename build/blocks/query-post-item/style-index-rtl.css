@@ -1,1 +1,20 @@
-.wp-block-tb-theme-query-post-item,:root .wp-block-tb-theme-query-post-item{text-decoration:none!important}
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/query-post-item/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-tb-theme-query-post-item,
+:root .wp-block-tb-theme-query-post-item {
+  text-decoration: none !important;
+}
+
+.tb-post-item:hover {
+  border-color: #0f3952 !important;
+  box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.43);
+}

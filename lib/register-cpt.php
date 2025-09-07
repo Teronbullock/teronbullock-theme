@@ -1,7 +1,6 @@
 <?php
 
 // --- Register Custom Post Type ---
-add_action('init', 'tb_register_cpts');
 function tb_register_cpts() {
 
   // Post Type: Project.  
@@ -51,10 +50,9 @@ function tb_register_cpts() {
 
   register_post_type('feature', $features_args);
 }
-
+add_action('init', 'tb_register_cpts');
 
 // --- Register Custom Taxonomy ---
-add_action('init', 'tb_register_taxonomies');
 function tb_register_taxonomies() {
   // Taxonomy: Project Category.
   $project_cat_args = array(
@@ -108,3 +106,4 @@ function tb_register_taxonomies() {
   );
   register_taxonomy('feature_category', ['feature'], $feature_cat_args);
 }
+add_action('init', 'tb_register_taxonomies');

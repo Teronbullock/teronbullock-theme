@@ -33,8 +33,8 @@ export default function Edit({ attributes, setAttributes }) {
         className: 'tb-query-container is-style-container',
         layout: {
           type: 'constrained',
-          contentSize: '900px',
-          wideSize: '1320px',
+          contentSize: '1000px',
+          wideSize: '1440px',
         },
       },
       [

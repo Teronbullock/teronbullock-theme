@@ -1,16 +1,17 @@
 <?php
-
-// register blocks
-add_action('init', 'tb_theme_blocks_block_init');
+// Register custom theme blocks
 function tb_theme_blocks_block_init() {
-  $blocks = array(
-    'tb-query',
-    'category-display-block',
-    'query-post-item'
-  );
+  // get blocks dir
+  $blocks_dir = get_stylesheet_directory() . '/build/blocks';
 
-  foreach ($blocks as $block) {
-    // This registers the blocks on the server, PHP.
-    register_block_type(get_stylesheet_directory() . '/build/blocks/' . $block);
+  // find all sub dirs, array_filter ensures only folders not files are registered
+  $dirs = array_filter(glob($blocks_dir . '/*'), 'is_dir');
+
+  foreach ($dirs as $dir) {
+    // ensures only dirs containing block.json are registered
+    if (file_exists($dir . '/block.json')) {
+      register_block_type($dir);
+    }
   }
 }
+add_action('init', 'tb_theme_blocks_block_init');

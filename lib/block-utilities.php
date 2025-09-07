@@ -10,7 +10,7 @@
 
 */
 //add_filter( 'allowed_block_types_all', 'tb_set_allowed_blocks', 10, 2);
-function tb_set_allowed_blocks( $allowed_block_types, $block_editor_context) {
+function tb_set_allowed_blocks($allowed_block_types, $block_editor_context) {
   return array(
     'core/paragraph',
     'core/heading',
@@ -26,14 +26,13 @@ function tb_set_allowed_blocks( $allowed_block_types, $block_editor_context) {
     'core/social-links',
     'core/separator',
     'core/buttons',
-    
+
   );
 }
 
 
 
 // register block styles
-add_action('init', 'tb_theme_register_block_styles');
 function tb_theme_register_block_styles() {
   $block_styles = array(
     'core/group'      => array(
@@ -96,9 +95,10 @@ function tb_theme_register_block_styles() {
         $block_name,
         array(
           'name'          => $block_style['name'],
-          'label'         => __( $block_style['label'] ),
+          'label'         => __($block_style['label']),
         )
       );
     }
   }
 }
+add_action('init', 'tb_theme_register_block_styles');

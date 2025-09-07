@@ -40,18 +40,18 @@ export default function Edit({ attributes, setAttributes }) {
         style: {
           border: {
             width: '1px',
-            color: '#0f3952',
+            color: '#0f39521A',
             radius: '10px',
           },
           spacing: {
             padding: {
-              top: '2rem',
-              bottom: '2rem',
-              left: '2rem',
-              right: '2rem',
+              top: 'var(--wp--preset--spacing--40)',
+              right: 'var(--wp--preset--spacing--40)',
+              bottom: 'var(--wp--preset--spacing--40)',
+              left: 'var(--wp--preset--spacing--40)',
             },
             margin: {
-              bottom: '2rem',
+              bottom: 'var(--wp--preset--spacing--60)',
             },
           },
         },
@@ -62,24 +62,19 @@ export default function Edit({ attributes, setAttributes }) {
           'core/post-title',
           {
             align: 'wide',
-
             style: {
               spacing: {
                 margin: {
                   right: '0',
-
                   left: '0',
-
                   top: '0',
-
                   bottom: '1rem',
                 },
               },
-
               typography: {
-                lineHeight: '1.33',
+                lineHeight: '1.5',
+                fontWeight: '600',
               },
-
               elements: {
                 link: {
                   color: {
@@ -88,10 +83,8 @@ export default function Edit({ attributes, setAttributes }) {
                 },
               },
             },
-
             textColor: 'secondary',
-
-            fontSize: 'medium',
+            fontSize: 'lg',
           },
         ],
         [
@@ -128,7 +121,7 @@ export default function Edit({ attributes, setAttributes }) {
                     },
                   },
                 },
-                fontSize: 'small',
+                fontSize: 'xs',
                 backgroundColor: 'primary',
                 textColor: 'white',
               },
@@ -151,7 +144,7 @@ export default function Edit({ attributes, setAttributes }) {
                     lineHeight: '1.5',
                   },
                 },
-                fontSize: 'small',
+                fontSize: 'xs',
                 dateFormat: 'F j, Y',
                 textColor: 'black',
               },
