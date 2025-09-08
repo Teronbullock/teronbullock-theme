@@ -24,13 +24,13 @@
 @media (min-width: 782px) {
   .is-style-container {
     max-width: 768px !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media (min-width: 992px) {
   .is-style-container {
     max-width: 960px !important;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -38,19 +38,10 @@
     max-width: 1140px !important;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .is-style-container {
-    max-width: 1320px !important;
+    max-width: 1440px !important;
   }
-}
-@media (min-width: 1920px) {
-  .is-style-container {
-    max-width: 1600px !important;
-  }
-}
-
-.is-style-container {
-  width: 100%;
 }
 
 .home .wp-block-post-title a {
@@ -526,53 +517,9 @@ html #wpadminbar {
 /* ================================= 
   Header
 ==================================== */
-.admin-bar .header {
-  top: 46px;
-}
-@media (min-width: 782px) {
-  .admin-bar .header {
-    top: 32px;
-  }
-}
-
-.home .header,
-.page-template-wp-custom-template-portfolio-pathways .header {
-  cursor: default;
-  transition: 0.5s;
-}
-.home .header.top,
-.page-template-wp-custom-template-portfolio-pathways .header.top {
-  background-color: transparent;
-}
-.home .header.top .wp-block-site-title,
-.home .header.top,
-.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-site-title,
-.page-template-wp-custom-template-portfolio-pathways .header.top {
-  color: #fff;
-}
-
-.header {
-  width: 100%;
-  background-color: #fff;
-  color: #141515;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.header .wp-block-site-title {
-  color: #141515;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  font-weight: 300;
-}
-
 @media (max-width: 992px) {
-  .home .header .wp-block-site-title {
-    display: none;
+  .home .wp-block-site-title {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -602,7 +549,7 @@ html #wpadminbar {
     margin: 0 5px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .wp-block-navigation-item {
     margin: 0 20px;
   }
@@ -787,14 +734,9 @@ cta
     max-width: 1140px !important;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .single-project .wp-block-cover {
     max-width: 1320px !important;
-  }
-}
-@media (min-width: 1920px) {
-  .single-project .wp-block-cover {
-    max-width: 1600px !important;
   }
 }
 .single-project .group-title {

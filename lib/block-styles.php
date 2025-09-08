@@ -53,7 +53,11 @@ function tb_theme_register_block_styles() {
       array(
         'name'  => 'container',
         'label' => 'Container',
-      )
+      ),
+      array(
+        'name'    => 'img-right-col',
+        'label'   => 'Image Right'
+      ),
     ),
     'core/cover'      => array(
       array(
@@ -69,7 +73,7 @@ function tb_theme_register_block_styles() {
       array(
         'name'  => 'img--project',
         'label' => 'Project',
-      )
+      ),
     ),
     'core/post-content' => array(
       array(

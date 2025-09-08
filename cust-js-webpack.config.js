@@ -8,7 +8,7 @@ module.exports = env => {
       themeMainScripts: [
         './src/assets/js/main.js',
         './src/assets/js/block-variations.js',
-        './src/assets/js/header-script.js',
+        // './src/assets/js/header-script.js',
       ],
       themeGTMScripts: './src/assets/js/gtm-scripts.js',
     },

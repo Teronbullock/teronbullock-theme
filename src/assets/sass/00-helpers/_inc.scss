@@ -5,7 +5,6 @@
 
 // max width
 @mixin mq-up($break) {
-
   @if $break == 'xs' {
     @media (max-width: var.$break-xs) {
       @content;
@@ -30,17 +29,11 @@
     @media (min-width: var.$break-2xl) {
       @content;
     }
-  } @else if $break == '3xl' {
-    @media (min-width: var.$break-3xl) {
-      @content;
-    }
   }
-
 }
 
 // min width
 @mixin mq-down($break) {
-
   @if $break == 'xs' {
     @media (max-width: var.$break-xs) {
       @content;
@@ -65,10 +58,5 @@
     @media (max-width: var.$break-2xl) {
       @content;
     }
-  } @else if $break == '3xl' {
-    @media (max-width: var.$break-3xl) {
-      @content;
-    }
   }
-
 }

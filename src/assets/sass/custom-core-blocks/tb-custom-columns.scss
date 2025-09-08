@@ -78,7 +78,8 @@
   }
 }
 
-.wp-block-columns.img-right-col {
+.wp-block-columns.img-right-col,
+.wp-block-columns.is-style-img-right-col {
   @include inc.mq-down(md) {
     flex-direction: column-reverse;
   }
@@ -87,6 +88,9 @@
 .wp-block-columns .wp-block-image {
   @include inc.mq-down(md) {
     text-align: center !important;
+    float: none !important;
+    margin-inline-start: auto !important;
+    margin-inline-end: auto !important;
   }
 }
 

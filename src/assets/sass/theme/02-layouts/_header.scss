@@ -5,55 +5,36 @@
 @use '../../00-helpers/inc' as inc;
 
 // header when admin bar is visible
-.admin-bar .header {
-  top: 46px;
+// .admin-bar .header {
+//   top: 46px;
 
-  @include inc.mq-up(md) {
-    top: 32px;
-  }
-}
+//   @include inc.mq-up(md) {
+//     top: 32px;
+//   }
+// }
 
 // home page header
-.home,
-.page-template-wp-custom-template-portfolio-pathways {
-  .header {
-    cursor: default;
-    transition: 0.5s;
-  }
+// .home,
+// .page-template-wp-custom-template-portfolio-pathways {
+//   .header {
+//     cursor: default;
+//     transition: 0.5s;
+//   }
 
-  // header at top of page
-  .header.top {
-    background-color: transparent;
-  }
+//   header at top of page
+//   .header.top {
+//     background-color: transparent;
+//   }
 
-  .header.top .wp-block-site-title,
-  .header.top {
-    color: var.$color-white;
-  }
-}
+//   .header.top .wp-block-site-title,
+//   .header.top {
+//     color: var.$color-white;
+//   }
+// }
 
-.header {
-  width: 100%;
-  background-color: var.$color-white;
-  color: var.$color-black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.header .wp-block-site-title {
-  color: var.$color-black;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  font-weight: 300;
-}
-
-.home .header .wp-block-site-title {
+.home .wp-block-site-title {
   @include inc.mq-down(lg) {
-    display: none;
+    font-size: 1.5rem !important;
   }
 }
 

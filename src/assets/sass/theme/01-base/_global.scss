@@ -23,12 +23,12 @@
 
   @include inc.mq-up(md) {
     max-width: 768px !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   @include inc.mq-up(lg) {
     max-width: 960px !important;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   @include inc.mq-up(xl) {
@@ -36,16 +36,8 @@
   }
 
   @include inc.mq-up('2xl') {
-    max-width: 1320px !important;
+    max-width: 1440px !important;
   }
-
-  @include inc.mq-up('3xl') {
-    max-width: 1600px !important;
-  }
-}
-
-.is-style-container {
-  width: 100%;
 }
 
 .home .wp-block-post-title a {
