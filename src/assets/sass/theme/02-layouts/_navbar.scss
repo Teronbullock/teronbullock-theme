@@ -119,3 +119,9 @@
     align-items: center !important;
   }
 }
+
+.wp-block-navigation .wp-block-navigation-item {
+  @include inc.mq-down(lg) {
+    margin-bottom: 2rem;
+  }
+}

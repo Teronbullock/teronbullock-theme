@@ -661,6 +661,12 @@ html #wpadminbar {
   }
 }
 
+@media (max-width: 992px) {
+  .wp-block-navigation .wp-block-navigation-item {
+    margin-bottom: 2rem;
+  }
+}
+
 /* ================================= 
 cta
 ==================================== */
