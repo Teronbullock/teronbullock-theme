@@ -10,8 +10,8 @@
 <!-- wp:group {"tagName":"section","metadata":{"name":"Hero"},"align":"full","className":"section-group section-group\u002d\u002dabout is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem"}}},"backgroundColor":"primary","textColor":"white","layout":{"type":"default"}} -->
 <section
   class="wp-block-group alignfull section-group section-group--about is-style-default has-white-color has-primary-background-color has-text-color has-background"
-  id="about" style="padding-top:6.75rem;padding-bottom:6.75rem">
-  <!-- wp:group {"className":"is-style-container","layout":{"type":"default"}} -->
+  id="hero" style="padding-top:6.75rem;padding-bottom:6.75rem">
+  <!-- wp:group {"className":"is-style-container","layout":{"type":"constrained"}} -->
   <div class="wp-block-group is-style-container">
     <!-- wp:columns {"align":"full","className":"is-style-img-right-col","style":{"spacing":{"padding":{"right":"0px","left":"0px"},"blockGap":{"left":"0"}}}} -->
     <div class="wp-block-columns alignfull is-style-img-right-col" style="padding-right:0px;padding-left:0px">
@@ -219,7 +219,8 @@
 
               <!-- wp:paragraph {"align":"left","style":{"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"medium","fontFamily":"heading"} -->
               <p class="has-text-align-left has-heading-font-family has-medium-font-size" style="margin-bottom:1rem">
-                <strong>Ready to get a website that works as hard as you do?</strong></p>
+                <strong>Ready to get a website that works as hard as you do?</strong>
+              </p>
               <!-- /wp:paragraph -->
 
               <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
@@ -287,12 +288,13 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","className":"section-group is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem"}}},"backgroundColor":"white","textColor":"dark","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","className":"section-group is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem"}}},"backgroundColor":"white-smoke","textColor":"dark","layout":{"type":"constrained"}} -->
 <section
-  class="wp-block-group alignfull section-group is-style-default has-dark-color has-white-background-color has-text-color has-background"
+  class="wp-block-group alignfull section-group is-style-default has-dark-color has-white-smoke-background-color has-text-color has-background"
   id="services" style="padding-top:6.75rem;padding-bottom:6.75rem">
-  <!-- wp:group {"align":"wide","className":"is-style-container","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group alignwide is-style-container">
+  <!-- wp:group {"align":"wide","className":"is-style-container","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|70","right":"var:preset|spacing|70"}},"border":{"radius":"8px"}},"backgroundColor":"white","layout":{"type":"default"}} -->
+  <div class="wp-block-group alignwide is-style-container has-white-background-color has-background"
+    style="border-radius:8px;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)">
     <!-- wp:heading {"textAlign":"center","placeholder":"Section Heading","align":"full","style":{"typography":{"fontStyle":"normal","fontWeight":"400"},"spacing":{"margin":{"bottom":"2rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"xl"} -->
     <h2
       class="wp-block-heading alignfull has-text-align-center has-primary-color has-text-color has-link-color has-xl-font-size"
@@ -444,7 +446,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Feat. Projects"},"align":"full","className":"section-group section-group\u002d\u002dproject is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem","left":"2rem","right":"2rem"}}},"backgroundColor":"white-smoke","textColor":"primary","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Feat. Projects"},"align":"full","className":"section-group section-group\u002d\u002dproject is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem","left":"2rem","right":"2rem"}}},"backgroundColor":"white-smoke","textColor":"primary","layout":{"type":"constrained"}} -->
 <section
   class="wp-block-group alignfull section-group section-group--project is-style-default has-primary-color has-white-smoke-background-color has-text-color has-background"
   id="projects" style="padding-top:6.75rem;padding-right:2rem;padding-bottom:6.75rem;padding-left:2rem">
@@ -516,13 +518,16 @@
       style="margin-bottom:1.5rem">Let's Talk About Growing Your Business Online</h2>
     <!-- /wp:heading -->
 
-    <!-- wp:paragraph {"align":"center","fontSize":"medium","fontFamily":"heading"} -->
-    <p class="has-text-align-center has-heading-font-family has-medium-font-size">Book a discovery call and let's map
+    <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontFamily":"heading"} -->
+    <p class="has-text-align-center has-primary-color has-text-color has-link-color has-heading-font-family">Book a
+      discovery call and let's map
       out your path to online growth.</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default","style":{"spacing":{"margin":{"bottom":"0rem"}}}} -->
-    <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-default" style="margin-bottom:0rem">
+    <!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default","style":{"spacing":{"margin":{"bottom":"0rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} -->
+    <div
+      class="wp-block-columns alignwide are-vertically-aligned-center is-style-default has-primary-color has-text-color has-link-color"
+      style="margin-bottom:0rem">
       <!-- wp:column {"verticalAlignment":"center","width":"","className":"cta","fontFamily":"heading"} -->
       <div class="wp-block-column is-vertically-aligned-center cta has-heading-font-family">
         <!-- wp:shortcode -->

@@ -46,6 +46,12 @@
   }
 }
 
+.wp-block-button__link.has-primary-color.has-white-smoke-background-color:hover {
+  color: var.$color-gray;
+  background-color: var.$color-primary;
+  border-color: var.$color-gray;
+}
+
 .cta .wpcf7 .btn-cta-submit-wrapper {
   display: inline-block;
 

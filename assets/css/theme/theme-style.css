@@ -680,20 +680,20 @@ cta
   background-color: inherit;
   border-radius: 0;
   border: 0;
-  border-bottom: 1px solid #141515;
+  border-bottom: 1px solid #0f3952;
   display: block;
   outline: 0;
   padding: 0 1em;
   text-decoration: none;
   width: 100%;
-  color: #141515;
+  color: #0f3952;
   font-size: 18px;
 }
 .cta .wpcf7 input:focus, .cta .wpcf7 input::placeholder,
 .cta .wpcf7 textarea:focus,
 .cta .wpcf7 textarea::placeholder {
   background-color: inherit;
-  color: #141515;
+  color: #0f3952;
 }
 
 .wpcf7-spinner {
@@ -901,6 +901,12 @@ cta
 
 .btn.btn--black:hover {
   color: #141515 !important;
+}
+
+.wp-block-button__link.has-primary-color.has-white-smoke-background-color:hover {
+  color: #f5f5f5;
+  background-color: #0f3952;
+  border-color: #f5f5f5;
 }
 
 .cta .wpcf7 .btn-cta-submit-wrapper {

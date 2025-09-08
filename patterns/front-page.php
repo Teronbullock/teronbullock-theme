@@ -10,7 +10,7 @@
 <!-- wp:group {"tagName":"section","metadata":{"name":"Hero"},"align":"full","className":"section-group section-group\u002d\u002dabout is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem"}}},"backgroundColor":"primary","textColor":"white","layout":{"type":"constrained"}} -->
 <section
   class="wp-block-group alignfull section-group section-group--about is-style-default has-white-color has-primary-background-color has-text-color has-background"
-  id="about" style="padding-top:6.75rem;padding-bottom:6.75rem">
+  id="hero" style="padding-top:6.75rem;padding-bottom:6.75rem">
   <!-- wp:group {"className":"is-style-container","layout":{"type":"constrained"}} -->
   <div class="wp-block-group is-style-container">
     <!-- wp:columns {"align":"full","className":"is-style-img-right-col","style":{"spacing":{"padding":{"right":"0px","left":"0px"},"blockGap":{"left":"0"}}}} -->
@@ -52,9 +52,10 @@
 
       <!-- wp:column {"verticalAlignment":"stretch","width":"50%"} -->
       <div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:50%">
-        <!-- wp:image {"id":235,"width":"400px","aspectRatio":"1","scale":"cover","sizeSlug":"medium","linkDestination":"none","align":"right","className":"is-style-default","style":{"border":{"width":"0px","style":"none","radius":"8px"},"color":{"duotone":"unset"}}} -->
+        <!-- wp:image {"id":1604,"width":"400px","aspectRatio":"1","scale":"cover","sizeSlug":"medium","linkDestination":"none","align":"right","className":"is-style-default","style":{"border":{"width":"0px","style":"none","radius":"8px"},"color":{"duotone":"unset"}}} -->
         <figure class="wp-block-image alignright size-medium is-resized has-custom-border is-style-default"><img
-            src="http://teronbullock.local/wp-content/uploads/2023/08/IMG_2449-300x300.jpg" alt="" class="wp-image-235"
+            src="https://teronbullock.com/wp-content/uploads/2025/08/teron-550-300x300.webp" alt="Image of Teron"
+            class="wp-image-1604"
             style="border-style:none;border-width:0px;border-radius:8px;aspect-ratio:1;object-fit:cover;width:400px" />
         </figure>
         <!-- /wp:image -->
@@ -67,7 +68,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Feat. Projects"},"align":"full","className":"section-group section-group\u002d\u002dproject is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem","left":"2rem","right":"2rem"}}},"backgroundColor":"white-smoke","textColor":"primary","layout":{"type":"constrained","contentSize":"900px","wideSize":"1320px"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Feat. Projects"},"align":"full","className":"section-group section-group\u002d\u002dproject is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem","left":"2rem","right":"2rem"}}},"backgroundColor":"white-smoke","textColor":"primary","layout":{"type":"constrained"}} -->
 <section
   class="wp-block-group alignfull section-group section-group--project is-style-default has-primary-color has-white-smoke-background-color has-text-color has-background"
   id="projects" style="padding-top:6.75rem;padding-right:2rem;padding-bottom:6.75rem;padding-left:2rem">
@@ -81,7 +82,7 @@
   <div class="wp-block-columns alignwide is-style-container">
     <!-- wp:column -->
     <div class="wp-block-column">
-      <!-- wp:query {"queryId":37,"query":{"perPage":"4","pages":"0","offset":0,"postType":"project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"taxQuery":{"project_category":[],"featured_project":[69]},"format":[]}} -->
+      <!-- wp:query {"queryId":37,"query":{"perPage":"4","pages":"0","offset":0,"postType":"project","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]}} -->
       <div class="wp-block-query">
         <!-- wp:post-template {"layout":{"type":"grid","columnCount":4}} -->
         <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","width":"","scale":"fill","align":"left","style":{"border":{"radius":"8px","width":"1px"},"spacing":{"margin":{"bottom":"1.5rem"}}},"borderColor":"primary"} /-->
@@ -115,7 +116,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"skills"},"align":"full","className":"section-group section-group\u002d\u002dskills is-style-default","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"primary","textColor":"light","layout":{"type":"constrained","contentSize":"900px","wideSize":"1320px"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"skills"},"align":"full","className":"section-group section-group\u002d\u002dskills is-style-default","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"primary","textColor":"light","layout":{"type":"constrained"}} -->
 <section
   class="wp-block-group alignfull section-group section-group--skills is-style-default has-light-color has-primary-background-color has-text-color has-background"
   id="skills" style="padding-top:4rem;padding-bottom:4rem">
@@ -312,7 +313,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Testimonials"},"align":"full","className":"section-group section-group\u002d\u002dabout is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem"}}},"backgroundColor":"white-smoke","textColor":"secondary","layout":{"type":"constrained","contentSize":"900px","wideSize":"1320px","justifyContent":"center"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Testimonials"},"align":"full","className":"section-group section-group\u002d\u002dabout is-style-default","style":{"spacing":{"padding":{"top":"6.75rem","bottom":"6.75rem"}}},"backgroundColor":"white-smoke","textColor":"secondary","layout":{"type":"constrained"}} -->
 <section
   class="wp-block-group alignfull section-group section-group--about is-style-default has-secondary-color has-white-smoke-background-color has-text-color has-background"
   id="testimonials" style="padding-top:6.75rem;padding-bottom:6.75rem">
@@ -327,7 +328,7 @@
     <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
     <div class="wp-block-group alignwide">
       <!-- wp:shortcode -->
-      [sp_testimonial id="1438"]
+      [sp_testimonial id="1240"]
       <!-- /wp:shortcode -->
     </div>
     <!-- /wp:group -->
@@ -336,7 +337,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"is-style-default","backgroundColor":"white-smoke","layout":{"type":"constrained","contentSize":"900px","wideSize":"1320px"}} -->
+<!-- wp:group {"className":"is-style-default","backgroundColor":"white-smoke","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-default has-white-smoke-background-color has-background">
   <!-- wp:group {"className":"is-style-default","backgroundColor":"black","layout":{"type":"constrained"}} -->
   <div class="wp-block-group is-style-default has-black-background-color has-background">
@@ -348,7 +349,7 @@
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"CTA"},"className":"section-group is-style-default","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"white-smoke","textColor":"dark","layout":{"type":"constrained","contentSize":"900px","wideSize":"1320px","justifyContent":"center"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"CTA"},"className":"section-group is-style-default","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}},"backgroundColor":"white-smoke","textColor":"dark","layout":{"type":"constrained"}} -->
 <section id="contact"
   class="wp-block-group section-group is-style-default has-dark-color has-white-smoke-background-color has-text-color has-background"
   style="padding-top:4rem;padding-bottom:4rem">
@@ -356,20 +357,20 @@
   <div
     class="wp-block-group alignwide has-secondary-color has-white-background-color has-text-color has-background has-link-color"
     style="padding-top:2.5rem;padding-right:2.5rem;padding-bottom:2.5rem;padding-left:2.5rem">
-    <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"1.5rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"primary","fontSize":"medium"} -->
-    <h2
-      class="wp-block-heading has-text-align-center has-primary-color has-text-color has-link-color has-medium-font-size"
+    <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"1.5rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"primary","fontSize":"xl"} -->
+    <h2 class="wp-block-heading has-text-align-center has-primary-color has-text-color has-link-color has-xl-font-size"
       style="margin-bottom:1.5rem;font-style:normal;font-weight:600">Ready to solve your technical challenges?</h2>
     <!-- /wp:heading -->
 
-    <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"medium","fontFamily":"heading"} -->
-    <p
-      class="has-text-align-center has-primary-color has-text-color has-link-color has-heading-font-family has-medium-font-size">
+    <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontFamily":"heading"} -->
+    <p class="has-text-align-center has-primary-color has-text-color has-link-color has-heading-font-family">
       Let's discuss how my experience can bring value to your team and projects.</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default","style":{"spacing":{"margin":{"bottom":"0rem"}}}} -->
-    <div class="wp-block-columns alignwide are-vertically-aligned-center is-style-default" style="margin-bottom:0rem">
+    <!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"is-style-default","style":{"spacing":{"margin":{"bottom":"0rem"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} -->
+    <div
+      class="wp-block-columns alignwide are-vertically-aligned-center is-style-default has-primary-color has-text-color has-link-color"
+      style="margin-bottom:0rem">
       <!-- wp:column {"verticalAlignment":"center","width":"","className":"cta","fontFamily":"heading"} -->
       <div class="wp-block-column is-vertically-aligned-center cta has-heading-font-family">
         <!-- wp:shortcode -->
@@ -383,11 +384,3 @@
   <!-- /wp:group -->
 </section>
 <!-- /wp:group -->
-
-<!-- wp:columns -->
-<div class="wp-block-columns">
-  <!-- wp:column {"width":"67%"} -->
-  <div class="wp-block-column" style="flex-basis:67%"></div>
-  <!-- /wp:column -->
-</div>
-<!-- /wp:columns -->

@@ -1,17 +1,36 @@
-<!-- wp:template-part {"slug":"header","theme":"teronbullock","tagName":"header","area":"header","align":"full"} /-->
+<!-- wp:group {"backgroundColor":"white-smoke","layout":{"type":"default"}} -->
+<div class="wp-block-group has-white-smoke-background-color has-background">
+  <!-- wp:template-part {"slug":"header","theme":"teronbullock","tagName":"header","area":"header","align":"full"} /-->
 
-<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"tagName":"main","metadata":{"name":"Project Query Loop"},"align":"full","layout":{"contentSize":"900px","type":"constrained","wideSize":"1320px"}} -->
-<main class="wp-block-query alignfull"><!-- wp:cover {"useFeaturedImage":true,"dimRatio":0,"customOverlayColor":"#FFF","isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0},"minHeightUnit":"px","contentPosition":"top center","isDark":false,"align":"wide","className":"is-style-project-cover","layout":{"type":"constrained"}} -->
-  <div class="wp-block-cover alignwide is-light has-custom-content-position is-position-top-center is-style-project-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#FFF"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
-  <p class="has-text-align-center has-large-font-size"></p>
-  <!-- /wp:paragraph --></div></div>
-  <!-- /wp:cover -->
-  
-  <!-- wp:group {"metadata":{"name":"group-title"},"className":"is-style-container group-title","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-container group-title"><!-- wp:post-title {"textAlign":"left","level":1,"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"top":"0"}}},"fontSize":"x-large"} /--></div>
-  <!-- /wp:group -->
-  
-  <!-- wp:post-content {"className":"is-style-container"} /--></main>
+  <!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"tagName":"main","metadata":{"name":"Project Query Loop"},"align":"full","layout":{"contentSize":"900px","type":"constrained","wideSize":"1320px"}} -->
+  <main class="wp-block-query alignfull">
+    <!-- wp:cover {"useFeaturedImage":true,"dimRatio":0,"customOverlayColor":"#FFF","isUserOverlayColor":true,"focalPoint":{"x":0.5,"y":0},"minHeightUnit":"px","contentPosition":"top center","isDark":false,"align":"wide","className":"is-style-project-cover","layout":{"type":"constrained"}} -->
+    <div
+      class="wp-block-cover alignwide is-light has-custom-content-position is-position-top-center is-style-project-cover"
+    >
+      <span
+        aria-hidden="true"
+        class="wp-block-cover__background has-background-dim-0 has-background-dim"
+        style="background-color: #fff"
+      ></span>
+      <div class="wp-block-cover__inner-container">
+        <!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+        <p class="has-text-align-center has-large-font-size"></p>
+        <!-- /wp:paragraph -->
+      </div>
+    </div>
+    <!-- /wp:cover -->
+
+    <!-- wp:group {"metadata":{"name":"group-title"},"className":"is-style-container group-title","layout":{"type":"default"}} -->
+    <div class="wp-block-group is-style-container group-title">
+      <!-- wp:post-title {"textAlign":"left","level":1,"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"top":"0"}}},"fontSize":"x-large"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:post-content {"className":"is-style-container"} /-->
+  </main>
   <!-- /wp:query -->
-  
+
   <!-- wp:template-part {"slug":"footer","theme":"teronbullock","tagName":"footer"} /-->
+</div>
+<!-- /wp:group -->
