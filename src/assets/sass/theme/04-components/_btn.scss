@@ -46,10 +46,12 @@
   }
 }
 
-.wp-block-button__link.has-primary-color.has-white-smoke-background-color:hover {
-  color: var.$color-gray !important;
-  background-color: var.$color-primary !important;
-  border: solid 2px var.$color-gray !important;
+.wp-block-button__link.has-primary-color.has-white-smoke-background-color {
+  &:hover {
+    color: var.$color-gray !important;
+    background-color: var.$color-primary !important;
+    border: solid 2px var.$color-gray !important;
+  }
 }
 
 .cta .wpcf7 .btn-cta-submit-wrapper {
