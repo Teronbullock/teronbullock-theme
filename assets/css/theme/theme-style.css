@@ -566,14 +566,16 @@ html #wpadminbar {
   padding-bottom: 0.5rem;
   transition: border-color 0.5s;
 }
-.wp-block-navigation-item__content:hover {
-  color: #0f3952 !important;
-  border-color: #0f3952;
-}
 @media (max-width: 782px) {
   .wp-block-navigation-item__content {
     padding-bottom: 0;
   }
+}
+
+.current-menu-item .wp-block-navigation-item__content,
+.wp-block-navigation-item__content:hover {
+  color: #0f3952 !important;
+  border-color: #0f3952;
 }
 
 .home .header.top .wp-block-navigation-item__content,

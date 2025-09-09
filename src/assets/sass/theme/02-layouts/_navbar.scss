@@ -25,14 +25,15 @@
   padding-bottom: 0.5rem;
   transition: border-color 0.5s;
 
-  &:hover {
-    color: var.$color-primary !important;
-    border-color: var.$color-primary;
-  }
-
   @include inc.mq-down(md) {
     padding-bottom: 0;
   }
+}
+
+.current-menu-item .wp-block-navigation-item__content,
+.wp-block-navigation-item__content:hover {
+  color: var.$color-primary !important;
+  border-color: var.$color-primary;
 }
 
 .home,
