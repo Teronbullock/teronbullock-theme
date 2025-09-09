@@ -572,7 +572,6 @@ html #wpadminbar {
   }
 }
 
-.current-menu-item .wp-block-navigation-item__content,
 .wp-block-navigation-item__content:hover {
   color: #0f3952 !important;
   border-color: #0f3952;
