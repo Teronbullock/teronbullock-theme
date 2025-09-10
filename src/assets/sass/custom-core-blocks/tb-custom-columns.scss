@@ -18,6 +18,7 @@
   }
 }
 
+.is-style-columns--skills,
 .wp-block-columns--tb-mobile-wrap {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -25,14 +26,42 @@
   gap: 2.125rem;
 }
 
-.wp-block-columns.wp-block-columns--tb-mobile-wrap .wp-block-column {
-  flex-basis: 28% !important;
+.is-style-columns--skills .wp-block-column,
+.wp-block-columns--tb-mobile-wrap .wp-block-column {
+  flex-basis: 50% !important;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+
+  @include inc.mq-up(sm) {
+    flex-basis: 33%;
+    margin-bottom: 1rem;
+    padding: 0.35rem;
+  }
+
+  @include inc.mq-up(md) {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  @include inc.mq-up(lg) {
+    flex-basis: 25%;
+  }
 
   &:last-child {
-    @media (min-width: 504px) {
+    max-width: 50%;
+
+    @include inc.mq-up(sm) {
       max-width: 33%;
     }
+
+    @include inc.mq-up(lg) {
+      max-width: 25%;
+    }
   }
+}
+
+.is-style-columns--skills .wp-block-column {
+  @media (min-width: var.$) margin-bottom: 1.5rem;
 }
 
 .wp-block-columns.wp-block-columns--profile {

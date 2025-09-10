@@ -58,6 +58,10 @@ function tb_theme_register_block_styles() {
         'name'    => 'img-right-col',
         'label'   => 'Image Right'
       ),
+      array(
+        'name'    => 'columns--skills',
+        'label'   => 'Skill Cols'
+      ),
     ),
     'core/cover'      => array(
       array(
