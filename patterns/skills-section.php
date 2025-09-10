@@ -17,9 +17,9 @@
     style="margin-bottom:5rem">Skills</h2>
   <!-- /wp:heading -->
 
-  <!-- wp:columns {"align":"wide","className":"wp-block-columns\u002d\u002dtb-mobile-wrap is-style-container","style":{"spacing":{"margin":{"bottom":"5rem"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+  <!-- wp:columns {"align":"wide","className":"tb-container is-style-columns\u002d\u002dskills","style":{"spacing":{"margin":{"bottom":"5rem"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
   <div
-    class="wp-block-columns alignwide wp-block-columns--tb-mobile-wrap is-style-container has-white-color has-text-color has-link-color"
+    class="wp-block-columns alignwide tb-container is-style-columns--skills has-white-color has-text-color has-link-color"
     style="margin-bottom:5rem">
     <!-- wp:column {"metadata":{"name":"React"}} -->
     <div class="wp-block-column">
@@ -240,7 +240,3 @@
   <!-- /wp:columns -->
 </section>
 <!-- /wp:group -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
