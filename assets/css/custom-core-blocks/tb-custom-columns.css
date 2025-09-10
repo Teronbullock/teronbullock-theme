@@ -1,17 +1,129 @@
-/* Error: Expected identifier.
- *    ,
- * 64 |   @media (min-width: var.$) margin-bottom: 1.5rem;
- *    |                           ^
- *    '
- *   src/assets/sass/custom-core-blocks/tb-custom-columns.scss 64:27  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a    \2577 \a 64 \2502    @media (min-width: var.$) margin-bottom: 1.5rem;\a    \2502                            ^\a    \2575 \a   src/assets/sass/custom-core-blocks/tb-custom-columns.scss 64:27  root stylesheet";
+/* ================================= 
+  Media Queries
+==================================== */
+@media (max-width: 782px) {
+  .home .wp-block-cover .wp-block-columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
+.is-style-columns--skills,
+.wp-block-columns--tb-mobile-wrap {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-wrap: wrap !important;
+  gap: 2.125rem;
+}
+
+.is-style-columns--skills .wp-block-column,
+.wp-block-columns--tb-mobile-wrap .wp-block-column {
+  flex-basis: 50% !important;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+}
+@media (min-width: 375px) {
+  .is-style-columns--skills .wp-block-column,
+  .wp-block-columns--tb-mobile-wrap .wp-block-column {
+    flex-basis: 33%;
+    margin-bottom: 1rem;
+    padding: 0.35rem;
+  }
+}
+@media (min-width: 782px) {
+  .is-style-columns--skills .wp-block-column,
+  .wp-block-columns--tb-mobile-wrap .wp-block-column {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .is-style-columns--skills .wp-block-column,
+  .wp-block-columns--tb-mobile-wrap .wp-block-column {
+    flex-basis: 25%;
+  }
+}
+.is-style-columns--skills .wp-block-column:last-child,
+.wp-block-columns--tb-mobile-wrap .wp-block-column:last-child {
+  max-width: 50%;
+}
+@media (min-width: 375px) {
+  .is-style-columns--skills .wp-block-column:last-child,
+  .wp-block-columns--tb-mobile-wrap .wp-block-column:last-child {
+    max-width: 33%;
+  }
+}
+@media (min-width: 992px) {
+  .is-style-columns--skills .wp-block-column:last-child,
+  .wp-block-columns--tb-mobile-wrap .wp-block-column:last-child {
+    max-width: 25%;
+  }
+}
+
+.wp-block-columns.wp-block-columns--profile {
+  margin-bottom: 0.5rem;
+}
+.wp-block-columns.wp-block-columns--profile .wp-block-column--profile-img {
+  overflow: hidden;
+}
+@media (max-width: 782px) {
+  .wp-block-columns.wp-block-columns--profile .wp-block-column--profile-img {
+    background-color: unset !important;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 782px) {
+  .wp-block-columns.wp-block-columns--profile .wp-block-column--profile-img {
+    border-radius: 10px 0 0 10px;
+  }
+}
+@media (max-width: 782px) {
+  .wp-block-columns.wp-block-columns--profile .wp-block-column--profile-img img {
+    width: 125px;
+    border-radius: 9999px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.wp-block-columns.wp-block-columns--profile .wp-block-column--profile-content {
+  padding: 0rem 1.25rem 0rem;
+  overflow: hidden;
+  color: #141515 !important;
+}
+@media (max-width: 782px) {
+  .wp-block-columns.wp-block-columns--profile .wp-block-column--profile-content {
+    text-align: center;
+    background-color: unset !important;
+  }
+}
+@media (min-width: 782px) {
+  .wp-block-columns.wp-block-columns--profile .wp-block-column--profile-content {
+    padding: 2.75rem 2rem 1rem;
+    border-radius: 0 10px 10px 0;
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 782px) {
+  .wp-block-columns.img-right-col,
+  .wp-block-columns.is-style-img-right-col {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 782px) {
+  .wp-block-columns .wp-block-image {
+    text-align: center !important;
+    float: none !important;
+    margin-inline-start: auto !important;
+    margin-inline-end: auto !important;
+  }
+}
+
+@media (max-width: 782px) {
+  .section-group--about .wp-block-columns {
+    row-gap: 4rem;
+  }
+}
+
+/*# sourceMappingURL=tb-custom-columns.css.map */
