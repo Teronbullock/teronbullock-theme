@@ -33,7 +33,7 @@
   padding: 0.5rem;
 
   @include inc.mq-up(sm) {
-    flex-basis: 33%;
+    flex-basis: 33% !important;
     margin-bottom: 1rem;
     padding: 0.35rem;
   }
@@ -44,7 +44,7 @@
   }
 
   @include inc.mq-up(lg) {
-    flex-basis: 25%;
+    flex-basis: 25% !important;
   }
 
   &:last-child {

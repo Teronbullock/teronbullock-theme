@@ -25,7 +25,7 @@
 @media (min-width: 375px) {
   .is-style-columns--skills .wp-block-column,
   .wp-block-columns--tb-mobile-wrap .wp-block-column {
-    flex-basis: 33%;
+    flex-basis: 33% !important;
     margin-bottom: 1rem;
     padding: 0.35rem;
   }
@@ -40,7 +40,7 @@
 @media (min-width: 992px) {
   .is-style-columns--skills .wp-block-column,
   .wp-block-columns--tb-mobile-wrap .wp-block-column {
-    flex-basis: 25%;
+    flex-basis: 25% !important;
   }
 }
 .is-style-columns--skills .wp-block-column:last-child,
