@@ -47,8 +47,13 @@
 }
 
 .header-group {
+  width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
 
   @include inc.mq-up(lg) {
     padding-top: 1rem;
