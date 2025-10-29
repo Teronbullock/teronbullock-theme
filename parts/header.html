@@ -1,13 +1,17 @@
-<!-- wp:group {"metadata":{"name":"header-container"},"align":"full","className":"is-style-container header-group","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"},":hover":{"color":{"text":"var:preset|color|primary"}}}}},"backgroundColor":"white-smoke","textColor":"primary","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:group {"metadata":{"name":"header-container"},"align":"full","className":"header-group is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"},":hover":{"color":{"text":"var:preset|color|primary"}}}}},"backgroundColor":"white-smoke","textColor":"primary","layout":{"type":"constrained"}} -->
 <div
-  class="wp-block-group alignfull is-style-container header-group has-primary-color has-white-smoke-background-color has-text-color has-background has-link-color"
+  class="wp-block-group alignfull header-group is-style-default has-primary-color has-white-smoke-background-color has-text-color has-background has-link-color"
 >
-  <!-- wp:group {"className":"is-style-default","layout":{"type":"flex"}} -->
-  <div class="wp-block-group is-style-default">
-    <!-- wp:site-title {"level":2,"style":{"typography":{"textTransform":"uppercase"}}} /-->
+  <!-- wp:group {"className":"is-style-container","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+  <div class="wp-block-group is-style-container">
+    <!-- wp:group {"className":"is-style-default","layout":{"type":"flex"}} -->
+    <div class="wp-block-group is-style-default">
+      <!-- wp:site-title {"level":2,"style":{"typography":{"textTransform":"uppercase"}}} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:navigation {"ref":97,"style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal"}} /-->
   </div>
   <!-- /wp:group -->
-
-  <!-- wp:navigation {"ref":97,"style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal"}} /-->
 </div>
 <!-- /wp:group -->
