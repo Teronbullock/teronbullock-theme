@@ -270,6 +270,9 @@
           }
         }
       },
+      "core/spacer": {
+        "dimensions": { "height": "1rem" }
+      },
       "core/site-title": {
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--main)",
