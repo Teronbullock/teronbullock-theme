@@ -26,8 +26,6 @@ function tb_register_cpts() {
   register_post_type('project', $projects_args);
 
 
-
-
   // Post Type: Features
   $features_args = array(
     'labels' => array(
@@ -52,43 +50,44 @@ function tb_register_cpts() {
 }
 add_action('init', 'tb_register_cpts');
 
+
+
 // --- Register Custom Taxonomy ---
 function tb_register_taxonomies() {
-  // Taxonomy: Project Category.
-  $project_cat_args = array(
+
+  // Taxonomy: Project Type.
+  $project_type_args = array(
     'labels' => array(
-      'name' => __('Project Categories', TB_TEXT_DOMAIN),
-      'singular_name' => __('Project Category', TB_TEXT_DOMAIN),
-      'add_new_item' => __('Add New Project Category', TB_TEXT_DOMAIN),
-      'all_items' => __('All Project Categories', TB_TEXT_DOMAIN),
+      'name' => __('Project Types', TB_TEXT_DOMAIN),
+      'singular_name' => __('Project Type', TB_TEXT_DOMAIN),
+      'add_new_item' => __('Add New Project Type', TB_TEXT_DOMAIN),
+      'all_items' => __('All Project Types', TB_TEXT_DOMAIN),
     ),
     'public' => true,
-    'rest_base' => 'project_category',
+    'rest_base' => 'project_type',
     'show_in_quick_edit' => true,
     'show_admin_column' => true,
     'show_in_rest' => true,
   );
 
-  register_taxonomy('project_category', ['project'], $project_cat_args);
+  register_taxonomy('project_type', ['project'], $project_type_args);
 
-
-  // Taxonomy: Project Category.
-  $project_feat_args = array(
+  // Taxonomy: Technologies.
+  $technology_args = array(
     'labels' => array(
-      'name' => __('Featured Projects', TB_TEXT_DOMAIN),
-      'singular_name' => __('Featured Project', TB_TEXT_DOMAIN),
-      'add_new_item' => __('Add New Featured Project', TB_TEXT_DOMAIN),
-      'all_items' => __('All Featured Project', TB_TEXT_DOMAIN),
+      'name' => __('Technologies', TB_TEXT_DOMAIN),
+      'singular_name' => __('Technology', TB_TEXT_DOMAIN),
+      'add_new_item' => __('Add New Technology', TB_TEXT_DOMAIN),
+      'all_items' => __('All Technologies', TB_TEXT_DOMAIN),
     ),
     'public' => true,
-    'rest_base' => 'featured_project',
+    'rest_base' => 'technology',
     'show_in_quick_edit' => true,
     'show_admin_column' => true,
     'show_in_rest' => true,
   );
 
-  register_taxonomy('featured_project', ['project'], $project_feat_args);
-
+  register_taxonomy('technologies', ['project'], $technology_args);
 
   // Taxonomy: Feature Category.
   $feature_cat_args = array(

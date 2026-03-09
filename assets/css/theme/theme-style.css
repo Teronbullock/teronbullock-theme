@@ -49,7 +49,8 @@
   }
 }
 
-.home .wp-block-post-title a {
+.home .wp-block-post-title a,
+.landing-page-site-title a {
   text-decoration: none !important;
 }
 
@@ -522,6 +523,15 @@ html #wpadminbar {
 /* ================================= 
   Header
 ==================================== */
+.admin-bar .header-group {
+  top: 46px;
+}
+@media (min-width: 782px) {
+  .admin-bar .header-group {
+    top: 32px;
+  }
+}
+
 @media (max-width: 992px) {
   .home .wp-block-site-title {
     font-size: 1.5rem !important;
