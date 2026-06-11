@@ -33,7 +33,7 @@
 @media (min-width: 992px) {
   .is-style-container,
   .tb-container {
-    max-width: 960px !important;
+    max-width: 800px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -45,7 +45,7 @@
 @media (min-width: 1440px) {
   .is-style-container,
   .tb-container {
-    max-width: 1000px !important;
+    max-width: 1200px !important;
   }
 }
 
@@ -598,46 +598,34 @@ html #wpadminbar {
 }
 
 .home .header.top .wp-block-navigation-item__content,
-.page-template-wp-custom-template-portfolio-pathways
-  .header.top
-  .wp-block-navigation-item__content {
+.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
   border-bottom: 2px transparent solid;
 }
 .home .header.top .wp-block-navigation-item__content:hover,
-.page-template-wp-custom-template-portfolio-pathways
-  .header.top
-  .wp-block-navigation-item__content:hover {
+.page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content:hover {
   transition: border-color 0.5s;
 }
 @media (min-width: 782px) {
   .home .header.top .wp-block-navigation-item__content:hover,
-  .page-template-wp-custom-template-portfolio-pathways
-    .header.top
-    .wp-block-navigation-item__content:hover {
+  .page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content:hover {
     color: #ffd275 !important;
     border-color: #ffd275;
   }
 }
 @media (max-width: 782px) {
   .home .header.top .wp-block-navigation-item__content,
-  .page-template-wp-custom-template-portfolio-pathways
-    .header.top
-    .wp-block-navigation-item__content {
+  .page-template-wp-custom-template-portfolio-pathways .header.top .wp-block-navigation-item__content {
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 0;
   }
 }
 
-.wp-block-navigation__responsive-container:not(.hidden-by-default):not(
-    .is-menu-open
-  ) {
+.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
   display: none;
 }
 @media (min-width: 992px) {
-  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(
-      .is-menu-open
-    ) {
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
     display: block;
   }
 }
@@ -688,8 +676,7 @@ html #wpadminbar {
 }
 
 @media (max-width: 992px) {
-  .wp-block-navigation__responsive-container.is-menu-open
-    .wp-block-navigation__responsive-container-content,
+  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content,
   .wp-block-navigation__container {
     align-items: center !important;
   }
@@ -729,8 +716,7 @@ cta
   color: #0f3952;
   font-size: 18px;
 }
-.cta .wpcf7 input:focus,
-.cta .wpcf7 input::placeholder,
+.cta .wpcf7 input:focus, .cta .wpcf7 input::placeholder,
 .cta .wpcf7 textarea:focus,
 .cta .wpcf7 textarea::placeholder {
   background-color: inherit;
@@ -765,19 +751,19 @@ cta
 }
 @media (min-width: 992px) {
   .single-project .wp-block-cover {
-    max-width: 800px !important;
+    max-width: 960px !important;
     min-height: 530px;
     border-radius: 4px;
   }
 }
 @media (min-width: 1200px) {
   .single-project .wp-block-cover {
-    max-width: 900px !important;
+    max-width: 1140px !important;
   }
 }
 @media (min-width: 1440px) {
   .single-project .wp-block-cover {
-    max-width: 1000px !important;
+    max-width: 1140px !important;
   }
 }
 .single-project .group-title {
@@ -829,9 +815,7 @@ cta
   color: #fff !important;
   border-color: #0f3952 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--primary:hover {
@@ -847,9 +831,7 @@ cta
   color: #fff !important;
   border-color: #102d12 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--secondary:hover {
@@ -865,9 +847,7 @@ cta
   color: #fff !important;
   border-color: #b6b9b9 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--tertiary:hover {
@@ -883,9 +863,7 @@ cta
   color: #fff !important;
   border-color: #ffd275 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--jasmine:hover {
@@ -901,9 +879,7 @@ cta
   color: #fff !important;
   border-color: #d74058 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--red:hover {
@@ -919,9 +895,7 @@ cta
   color: #fff !important;
   border-color: #f5f5f5 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--gray:hover {
@@ -937,9 +911,7 @@ cta
   color: #fff !important;
   border-color: #fff !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--outline-black {
@@ -951,9 +923,7 @@ cta
   color: #fff !important;
   border-color: #141515 !important;
   transition-timing-function: cubic-bezier(1, -0.02, 0.7, 0.93) !important;
-  transition:
-    background-color 0.25s,
-    color 0.6s;
+  transition: background-color 0.25s, color 0.6s;
 }
 
 .btn.btn--black:hover {
