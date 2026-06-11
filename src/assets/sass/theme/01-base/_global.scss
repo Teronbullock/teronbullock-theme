@@ -29,15 +29,15 @@
   }
 
   @include inc.mq-up(lg) {
-    max-width: 960px !important;
+    max-width: 800px !important;
   }
 
   @include inc.mq-up(xl) {
-    max-width: 1140px !important;
+    max-width: 900px !important;
   }
 
   @include inc.mq-up('2xl') {
-    max-width: 1440px !important;
+    max-width: 1200px !important;
   }
 }
 

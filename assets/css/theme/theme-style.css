@@ -765,19 +765,19 @@ cta
 }
 @media (min-width: 992px) {
   .single-project .wp-block-cover {
-    max-width: 960px !important;
+    max-width: 800px !important;
     min-height: 530px;
     border-radius: 4px;
   }
 }
 @media (min-width: 1200px) {
   .single-project .wp-block-cover {
-    max-width: 1140px !important;
+    max-width: 900px !important;
   }
 }
 @media (min-width: 1440px) {
   .single-project .wp-block-cover {
-    max-width: 1320px !important;
+    max-width: 1000px !important;
   }
 }
 .single-project .group-title {
