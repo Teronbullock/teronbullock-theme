@@ -55,8 +55,8 @@
       ]
     },
     "layout": {
-      "contentSize": "1100px",
-      "wideSize": "1440px"
+      "contentSize": "900px",
+      "wideSize": "1000px"
     },
     "typography": {
       "customFontSize": false,
@@ -122,7 +122,7 @@
         {
           "fontFamily": "Poppins, Helvetica, Arial, Lucida, sans-serif",
           "name": "Poppins",
-          "slug": "main",
+          "slug": "header",
           "fontFace": [
             {
               "fontFamily": "Poppins",
@@ -163,7 +163,7 @@
         {
           "fontFamily": "Lora, sans-serif",
           "name": "Lora",
-          "slug": "body",
+          "slug": "main",
           "fontFace": [
             {
               "fontFamily": "Lora",
@@ -216,19 +216,19 @@
     "elements": {
       "h1": {
         "typography": {
-          "fontWeight": "600",
+          "fontWeight": "500",
           "fontSize": "var(--wp--preset--font-size--xxl)"
         }
       },
       "h2": {
         "typography": {
-          "fontWeight": "500",
+          "fontWeight": "600",
           "fontSize": "var(--wp--preset--font-size--xl)"
         }
       },
       "h3": {
         "typography": {
-          "fontWeight": "500",
+          "fontWeight": "600",
           "fontSize": "var(--wp--preset--font-size--lg)"
         }
       },
@@ -240,7 +240,7 @@
       },
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--main)"
+          "fontFamily": "var(--wp--preset--font-family--header)"
         }
       }
     },
@@ -275,7 +275,7 @@
       },
       "core/site-title": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--main)",
+          "fontFamily": "var(--wp--preset--font-family--header)",
           "fontSize": "var(--wp--preset--font-size-sm)",
           "letterSpacing": "0.8px"
         },
@@ -296,14 +296,14 @@
       },
       "core/navigation": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--main)"
+          "fontFamily": "var(--wp--preset--font-family--header)"
         }
       },
       "core/paragraph": {
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--main)",
           "fontSize": "var(--wp--preset--font-size--sm)",
-          "lineHeight": "1.5"
+          "lineHeight": "1.75"
         },
         "spacing": {
           "margin": {
@@ -315,7 +315,7 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--main)",
           "fontSize": "var(--wp--preset--font-size--sm)",
-          "lineHeight": "1.5"
+          "lineHeight": "1.75"
         }
       },
       "core/list-item": {
